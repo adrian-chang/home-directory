@@ -1,3 +1,0 @@
-[submodule ".vim/colors/desert"]
-	path = .vim/colors/desert
-	url = git://github.com/fugalh/desert.vim.git
