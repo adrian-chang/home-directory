@@ -15,7 +15,7 @@ syntax on " highlight syntax
 " command-t
 :let g:CommandTMaxHeight=20 " needs to be done before it's loaded
 " syntastic
-:au VimEnter * :let g:syntastic_auto_loc_list=1
+:au VimEnter * :let g:syntastic_auto_loc_list=1 " let the error list popup when needed and used
 " conque_term
 ":au VimEnter * :let my_terminal = conque_term#open('/bin/bash', ['bel split', 'resize 15'], 1)
 " nerdtree
