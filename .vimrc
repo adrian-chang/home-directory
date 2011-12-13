@@ -6,12 +6,12 @@
 :set ignorecase
 :set path=./**
 :set ts=4
-" pathogen
-:call pathogen#infect()
-:call pathogen#helptags()
+" pathogen, should be first
+:call pathogen#infect() " call pathogen#infect, to use package manager
+:call pathogen#helptags() " call pathogen#helptags, to generate tag files from bundles
 " colorscheme
-syntax on 
-:au VimEnter * :colorscheme desert 
+syntax on " highlight syntax
+:au VimEnter * :colorscheme desert " .vim/colors
 " command-t
 :let g:CommandTMaxHeight=20 " needs to be done before it's loaded
 " syntastic
