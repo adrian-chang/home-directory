@@ -1,0 +1,20 @@
+[adrian]
+	blank = Adrian 
+[user]
+	email = blank@gmail.com
+	name = blank
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[http]
+	sslCAPath = ~/Development/ssh
+[merge]
+	tool = opendiff
+[mergetool]
+	prompt = false
+[github]
+	token = blank 
+	user = adrian-chang
