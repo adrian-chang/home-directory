@@ -8,6 +8,9 @@ set path=./**
 set ts=4
 filetype plugin on " allow a plugin to be loaded based on a filetype
 
+" Macvim / GUI Vim
+set guioptions-=T
+
 " pathogen, should be first
 call pathogen#infect() " call pathogen#infect, to use package manager
 call pathogen#helptags() " call pathogen#helptags, to generate tag files from bundles
