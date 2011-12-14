@@ -6,6 +6,7 @@ set autoindent
 set ignorecase
 set path=./**
 set ts=4
+filetype on " trigger the autocommand for filetype changes (used for tabbing etc. per file)
 filetype plugin on " allow a plugin to be loaded based on a filetype
 
 " Macvim / GUI Vim
@@ -26,15 +27,18 @@ let g:CommandTMaxHeight=18 " needs to be done before it's loaded
 au VimEnter * :let g:syntastic_auto_loc_list=1 " let the error list popup when needed and used
 
 " nerdtree
-au VimEnter * :let NERDTreeShowHidden=1 " show hidden files
-au VimEnter * :NERDTree " open NERDTree
+let g:NERDTreeShowHidden=1 " show hidden files
+let g:NERDTreeWinSize=25 " nerdtree width window
+let g:NERDTreeShowBookmarks=1 " show the bookmarks stored
+au VimEnter * :NERDTree " open NERDTree:
 
 " autocomplete
-au VimEnter * :let g:acp_behaviorKeywordLength=1 " autocomplete after 1 character 
+let g:acp_behaviorKeywordLength=1 " autocomplete after 1 character 
 
 " tagbar 
-au VimEnter * :let g:tagbar_width=25 " set the tagbar width to 25 characters
+let g:tagbar_width=25 " set the tagbar width to 25 characters
 au VimEnter * nested :TagbarOpen " open tagbar on every nested window switch
-au VimEnter * :g:tagbar_autoclose=0
 
 " plugin keymappings
+
+" per file type specific commands
