@@ -9,7 +9,7 @@ set ts=4
 filetype plugin on " allow a plugin to be loaded based on a filetype
 
 " Macvim / GUI Vim
-set guioptions-=T
+set guioptions-=T " don't show gui bar
 
 " pathogen, should be first
 call pathogen#infect() " call pathogen#infect, to use package manager
@@ -35,3 +35,6 @@ au VimEnter * :let g:acp_behaviorKeywordLength=1 " autocomplete after 1 characte
 " tagbar 
 au VimEnter * :let g:tagbar_width=25 " set the tagbar width to 25 characters
 au VimEnter * nested :TagbarOpen " open tagbar on every nested window switch
+au VimEnter * :g:tagbar_autoclose=0
+
+" plugin keymappings
