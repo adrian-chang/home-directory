@@ -8,3 +8,4 @@
 	uses submodule)
 	Install latest node (<0.6)
 3. Install JSHint / Ruby for Syntastic
+4. For Command-T (liter t), make sure Vim has +Ruby (vim --version)
