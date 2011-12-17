@@ -1,7 +1,20 @@
+# Home Folder Junk
+.bash_history
+.CFUserTextEncoding
+.DS_Store
 .dropbox/
+.fontconfig/
 .irb-history
 .irb_history
 .pip/
+.ssh/
+.vim/bundle/tagbar/doc/tags
+.viminfo
+.Trash/
+.Xauthority
+Desktop/
+Documents/
+Downloads/
 Movies/
 Music/
 Pictures/

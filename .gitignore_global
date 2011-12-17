@@ -1,2 +1,6 @@
 # Binary Files
 *.jar
+
+# Temporary Files
+*.swp
+

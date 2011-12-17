@@ -18,3 +18,5 @@
 [github]
 	token = blank 
 	user = adrian-chang
+[core]
+	excludesfile = /Users/adrian/.gitignore_global
