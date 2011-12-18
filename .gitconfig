@@ -1,22 +1,18 @@
-[adrian]
-	blank = Adrian 
 [user]
-	email = blank@gmail.com
-	name = blank
-[difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+	email =
+	name = 
 [difftool]
 	prompt = false
 [diff]
-	tool = Kaleidoscope
+	tool = opendiff
 [http]
-	sslCAPath = ~/Development/ssh
+	sslCAPath = ~/.ssh
 [merge]
 	tool = opendiff
 [mergetool]
 	prompt = false
 [github]
-	token = blank 
-	user = adrian-chang
+	token = 
+	user = amchang
 [core]
 	excludesfile = /Users/adrian/.gitignore_global

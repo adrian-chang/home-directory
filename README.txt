@@ -21,7 +21,9 @@
  - Use Ocean Colorscheme from Github
  - Slight Transparency
 5. Install Xcode
- - Use app store or developer.apple.com/downloads
+ - Use app store or developer.apple.com/Downloads
+ - Includes Dev tools (merge etc. /developer/utilites)
+ - Move FileMerge to Dock
 6. Install Apple Java Developer update
  - Use developer.apple.com
 7. Install Homebrew
@@ -32,11 +34,15 @@
 -- Checkout Home Directory from Github
 1. Use git init, then git remote add origin
 
+-- Git Setup Notes
+1. Need to fill out hidden fields
+2. Need to select merge / difftool
+3. Setup SSH keys on new machine
+
 -- Vim Setup Notes
 1. To fix (gksudo:5045): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap"
  - apt-get install gtk2-engines-pixbuf
 2. Install Exuberant CTags / DoctorJs (JSCtags) for tagbar
- - (JSCtags)
  - Use brew for Exuberant ctags
  - git clone --recursive git://github.com/mozilla/doctorjs.git (doctorjs) (uses submodule)
  - Install latest node (<0.6)
@@ -47,12 +53,7 @@
 6. For NerdTree, need to use :ReloadBookmark after startup to readbookmarks from ~/.NERDTreeBookmarks
 7. For :Ack, need to brew ack
 
--- Git Setup Notes
-1. Need to fill out hidden fields
-2. Need to select merge / diftool
-3. Setup SSH keys on new machine
-
-
 -- Development Enviroment Cleanup
 
-1. 	Remove Dropbox
+1. Remove Dropbox
+ - Remove selective sync first to remove files
