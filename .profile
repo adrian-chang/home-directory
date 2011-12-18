@@ -1,5 +1,9 @@
+# Default text editor
 export EDITOR="mvim"
-export NODE_PATH="/usr/local/lib/node"
-export PATH="/usr/local/bin:/usr/local/sbin:~/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
+# Node location
+export NODE_PATH="/usr/local/lib/jsctags:/usr/local/lib/node"
+# Where to look for files
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
+
+# Don't show hidden files
 defaults write com.apple.Finder AppleShowAllFiles NO 
-export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
