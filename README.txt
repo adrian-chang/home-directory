@@ -45,6 +45,7 @@
 4. For Command-T (liter t), make sure Vim has +Ruby (vim --version)
 5. For Vim-autocomplpop, it needs Vim-l9
 6. For NerdTree, need to use :ReloadBookmark after startup to readbookmarks from ~/.NERDTreeBookmarks
+7. For :Ack, need to brew ack
 
 -- Git Setup Notes
 1. Need to fill out hidden fields
