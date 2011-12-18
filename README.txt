@@ -39,6 +39,12 @@
 2. Need to select merge / difftool
 3. Setup SSH keys on new machine
 
+-- Node
+1. Install Node Version Manager
+ - https://github.com/creationix/nvm 
+ - Source nvm to shell
+2. nvm install v0.6.6
+
 -- Vim Setup Notes
 1. To fix (gksudo:5045): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap"
  - apt-get install gtk2-engines-pixbuf
