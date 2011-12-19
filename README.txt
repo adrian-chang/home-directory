@@ -44,6 +44,9 @@
  - https://github.com/creationix/nvm 
  - Source nvm to shell
 2. nvm install v0.6.6
+3. nvm use v0.6.6
+4. npm install -g node-inspector
+5. npm install -g jshint
 
 -- Vim Setup Notes
 1. To fix (gksudo:5045): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap"
@@ -53,7 +56,7 @@
  - git clone --recursive git://github.com/mozilla/doctorjs.git (doctorjs) (uses submodule)
  - Install latest node (<0.6)
  - Use ~/.ctags for custom language
-3. Install JSHint / Ruby for Syntastic
+3. Ensure JSHint (node) / Ruby is installed for Syntastic
 4. For Command-T (liter t), make sure Vim has +Ruby (vim --version)
 5. For Vim-autocomplpop, it needs Vim-l9
 6. For NerdTree, need to use :ReloadBookmark after startup to readbookmarks from ~/.NERDTreeBookmarks

@@ -6,6 +6,7 @@
 .fontconfig/
 .irb-history
 .irb_history
+.npm/
 .nvm/
 .pip/
 .ssh/
