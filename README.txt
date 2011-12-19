@@ -48,6 +48,13 @@
 4. npm install -g node-inspector
 5. npm install -g jshint
 
+-- Ruby
+1. Install rvm
+ - Single user installation
+ - Source RVM to profile
+2. rvm install 1.9.2
+3. rvm use --default 1.9.2
+
 -- Vim Setup Notes
 1. To fix (gksudo:5045): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap"
  - apt-get install gtk2-engines-pixbuf
