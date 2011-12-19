@@ -56,6 +56,8 @@
 2. rvm install 1.9.2
 3. rvm use --default 1.9.2
 4. Create gemset
+5. Update gemset 
+ - rvm [target] do gem update or gem update
 
 -- Vim Setup Notes
 1. To fix (gksudo:5045): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap"
