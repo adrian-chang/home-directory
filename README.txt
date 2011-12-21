@@ -73,6 +73,11 @@
 5. For Vim-autocomplpop, it needs Vim-l9
 6. For NerdTree, need to use :ReloadBookmark after startup to readbookmarks from ~/.NERDTreeBookmarks
 7. For :Ack, need to brew ack
+8. For ruby-vim debugger, make sure signs \ hasclientserver + vim > 7
+9. Ruby-Vim-Debugger, gem install ruby-debug-ide(19)
+10. Rdb for Rails 3, :let g:ruby_debugger_default_script = 'script/rails server' (:Redebugger default)  
+11. Rdb (IMPORTANT FOR OS X) let g:ruby_debugger_progname = 'mvim'
+12. Rdb :RdbLog, :RdbEval, :RdbCond, :RdbStop
 
 -- Development Enviroment Cleanup
 

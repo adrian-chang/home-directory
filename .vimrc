@@ -39,6 +39,11 @@ let g:acp_behaviorKeywordLength=1 " autocomplete after 1 character
 let g:tagbar_width=25 " set the tagbar width to 25 characters
 au VimEnter * nested :TagbarOpen " open tagbar on every nested window switch
 
+" ruby-vim-debugger
+"let g:ruby_debugger_debug_mode = 1 " print out debug messages
+let g:ruby_debugger_progname = 'mvim' " macvim is default vim
+set statusline=%{ruby_debugger#statusline()} " show if we're in debug mode
+
 " plugin keymappings
 
 " per file type specific commands
