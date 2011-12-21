@@ -47,6 +47,7 @@
 3. nvm use v0.6.6
 4. npm install -g node-inspector
 5. npm install -g jshint
+6. nvm alias default 0.6.6
 
 -- Ruby
 1. Install rvm
@@ -64,7 +65,7 @@
  - apt-get install gtk2-engines-pixbuf
 2. Install Exuberant CTags / DoctorJs (JSCtags) for tagbar
  - Use brew for Exuberant ctags
- - git clone --recursive git://github.com/mozilla/doctorjs.git (doctorjs) (uses submodule)
+ - git clone --recursive git://github.com/mozilla/doctorjs.git (doctorjs) (uses submodule) or git submodule init / update
  - Install latest node (<0.6)
  - Use ~/.ctags for custom language
 3. Ensure JSHint (node) / Ruby is installed for Syntastic
