@@ -31,6 +31,7 @@
  - Use brew
  - Symbolic link app to /applications
 9. Install Google Voice Plugin
+10. Install Evernote
 
 -- Checkout Home Directory from Github
 1. Use git init, then git remote add origin
