@@ -30,7 +30,7 @@ au VimEnter * :let g:syntastic_auto_loc_list=1 " let the error list popup when n
 let g:NERDTreeShowHidden=1 " show hidden files
 let g:NERDTreeWinSize=25 " nerdtree width window
 let g:NERDTreeShowBookmarks=1 " show the bookmarks stored
-au VimEnter * :NERDTree " open NERDTree:
+au GUIEnter * :NERDTree " open NERDTree:
 
 " autocomplete
 let g:acp_behaviorKeywordLength=1 " autocomplete after 1 character 

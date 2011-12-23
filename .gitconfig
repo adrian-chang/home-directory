@@ -16,3 +16,4 @@
 	user = amchang
 [core]
 	excludesfile = /Users/adrian/.gitignore_global
+	editor = mvim -f
