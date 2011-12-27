@@ -18,7 +18,7 @@
 3. Install Skype
 4. Install iTerm 2.0
  - Unlimited scroll-back 
- - Use Ocean Colorscheme from Github
+ - Use Ocean Colorscheme / solarized high constrast from Github
  - Slight Transparency
 5. Install Xcode
  - Use app store or developer.apple.com/Downloads
