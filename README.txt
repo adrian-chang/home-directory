@@ -74,6 +74,7 @@
  - Use ~/.ctags for custom language
 3. Ensure JSHint (node) / Ruby is installed for Syntastic
 4. For Command-T (liter t), make sure Vim has +Ruby (vim --version)
+ - Compile C Extension
 5. For Vim-autocomplpop, it needs Vim-l9
 6. For NerdTree, need to use :ReloadBookmark after startup to readbookmarks from ~/.NERDTreeBookmarks
 7. For :Ack, need to brew ack
