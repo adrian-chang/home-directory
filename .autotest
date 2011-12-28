@@ -2,8 +2,8 @@
 require 'autotest/fsevent'
 
 # hook for integration tests
-Autotest.add_hook :initialize do |autotest| 
-	autotest.add_mapping(/ˆspec\/requests\/.*_spec\.rb$/) do
-		autotest.files_matching(/ˆspec\/requests\/.*_spec\.rb$/)
-	end 
+Autotest.add_hook :initialize do |at|
+ 	 at.add_mapping(%r%^spec/(integration)/.*rb$%) do |filename, _|
+    	filename
+ 	end 
 end
