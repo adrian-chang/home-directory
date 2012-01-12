@@ -6,6 +6,7 @@ set autoindent
 set ignorecase
 set path=./**
 set ts=4
+
 filetype on " trigger the autocommand for filetype changes (used for tabbing etc. per file)
 filetype plugin on " allow a plugin to be loaded based on a filetype
 
@@ -42,8 +43,11 @@ let g:tagbar_width=25 " set the tagbar width to 25 characters
 au VimEnter * nested :TagbarOpen " open tagbar on every nested window switch
 
 " ruby-vim-debugger
-"let g:ruby_debugger_debug_mode = 1 " print out debug messages
+let g:ruby_debugger_debug_mode = 1 " print out debug messages
 let g:ruby_debugger_progname = 'mvim' " macvim is default vim
+let g:ruby_debugger_default_script = 'script/rails server thin' " gogobot specific thin startup rdebugger 
+let g:ruby_debugger_spec_path = '/Users/adrian/.rvm/gems/ruby-1.9.3-p0@gogobot/bin/rspec'
+let g:ruby_debugger_builtin_sender = 0
 set statusline=%{ruby_debugger#statusline()} " show if we're in debug mode
 
 " plugin keymappings
