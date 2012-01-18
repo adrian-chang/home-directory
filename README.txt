@@ -84,6 +84,10 @@
 11. Rdb (IMPORTANT FOR OS X) let g:ruby_debugger_progname = 'mvim'
 12. Rdb :RdbLog, :RdbEval, :RdbCond, :RdbStop
 
+-- Growl
+1. Use Growl-Fork
+2. Growl_Notify Gem
+
 -- Development Enviroment Cleanup
 
 1. Remove Dropbox
