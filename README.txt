@@ -63,6 +63,7 @@
  - rvm [target] do gem update or gem update
 6. Ruby load path (1.9.2) dosen't scan current dir
 7. Ruby 1.9, gems are loaded by default, no require rubygems to get single path gems
+8. rubygems-bundler to avoid bundle exec 
 
 -- Vim Setup Notes
 1. To fix (gksudo:5045): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap"
