@@ -25,6 +25,7 @@ au VimEnter * :colorscheme desert " .vim/colors
 let g:CommandTMaxHeight=18 " needs to be done before it's loaded
 nnoremap <silent> <Leader>[ :CommandT<CR>
 nnoremap <silent> <Leader>] :CommandTBuffer<CR>
+nnoremap <silent> <Leader>' :CommandTFlush<CR>
 
 " syntastic
 au VimEnter * :let g:syntastic_auto_loc_list=1 " let the error list popup when needed and used
