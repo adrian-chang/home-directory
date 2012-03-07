@@ -6,6 +6,7 @@ set autoindent
 set ignorecase
 set path=./**
 set ts=4
+set shiftwidth=4
 
 filetype on " trigger the autocommand for filetype changes (used for tabbing etc. per file)
 filetype plugin on " allow a plugin to be loaded based on a filetype
