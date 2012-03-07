@@ -30,6 +30,7 @@ nnoremap <silent> <Leader>' :CommandTFlush<CR>
 
 " syntastic
 au VimEnter * :let g:syntastic_auto_loc_list=1 " let the error list popup when needed and used
+au VimEnter * :let g:syntastic_loc_list_height=5 " error list cap at 5
 
 " nerdtree
 let g:NERDTreeShowHidden=1 " show hidden files
