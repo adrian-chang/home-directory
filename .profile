@@ -11,7 +11,7 @@ source ~/.nvm/nvm.sh
 # if rvm exists, then source it 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 # aliases
-alias gogobot_dev_folder='cd ~/Development/projects/Gogobot-Rails3/www_rails/'
+alias dev_folder='cd ~/Development/projects/Gogobot-Rails3/www_rails/'
 # use bundler when you can
 export USE_BUNDLER=try
 export BUNDLER_BLACKLIST="guard"
