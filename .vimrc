@@ -37,14 +37,14 @@ au VimEnter * :let g:syntastic_loc_list_height=5 " error list cap at 5
 let g:NERDTreeShowHidden=1 " show hidden files
 let g:NERDTreeWinSize=25 " nerdtree width window
 let g:NERDTreeShowBookmarks=1 " show the bookmarks stored
-au GUIEnter * :NERDTree " open NERDTree:
+" au GUIEnter * :NERDTree " open NERDTree:
 
 " autocomplete
 let g:acp_behaviorKeywordLength=1 " autocomplete after 1 character 
 
 " tagbar 
 let g:tagbar_width=25 " set the tagbar width to 25 characters
-au VimEnter * nested :TagbarOpen " open tagbar on every nested window switch
+" au VimEnter * nested :TagbarOpen " open tagbar on every nested window switch
 
 " ruby-vim-debugger
 let g:ruby_debugger_debug_mode = 1 " print out debug messages
