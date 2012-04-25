@@ -5,8 +5,8 @@ set hidden
 set autoindent
 set ignorecase
 set path=./**
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 filetype on " trigger the autocommand for filetype changes (used for tabbing etc. per file)
