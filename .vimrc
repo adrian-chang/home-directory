@@ -54,6 +54,9 @@ let g:ruby_debugger_spec_path = '/Users/adrian/.rvm/gems/ruby-1.9.3-p0@gogobot/b
 let g:ruby_debugger_builtin_sender = 0
 set statusline=%{ruby_debugger#statusline()} " show if we're in debug mode
 
+" js beautify
+au BufRead,BufNewFile *.json setf json
+
 " plugin keymappings
 
 " per file type specific commands
