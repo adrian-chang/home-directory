@@ -15,9 +15,6 @@ filetype plugin on " allow a plugin to be loaded based on a filetype
 " Macvim / GUI Vim
 set guioptions-=T " don't show gui bar
 
-" jsbeautify
-nnoremap <silent> <leader>= :call <SID>beautify()<CR>
-
 " pathogen, should be first
 call pathogen#infect() " call pathogen#infect, to use package manager
 call pathogen#helptags() " call pathogen#helptags, to generate tag files from bundles
