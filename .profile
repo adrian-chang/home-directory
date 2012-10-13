@@ -15,3 +15,5 @@ alias dev_folder='cd ~/Development/projects/Gogobot-Rails3/www_rails/'
 # use bundler when you can
 export USE_BUNDLER=try
 export BUNDLER_BLACKLIST="guard"
+# fink
+. /sw/bin/init.sh

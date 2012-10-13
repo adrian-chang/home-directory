@@ -57,6 +57,12 @@ set statusline=%{ruby_debugger#statusline()} " show if we're in debug mode
 " js beautify
 au BufRead,BufNewFile *.json setf json
 
+" arrow pad window resize
+nnoremap <Leader>9 :vertical resize -5<cr>
+nnoremap <Leader>0 :resize +5<cr>
+nnoremap <Leader>- :resize -5<cr>
+nnoremap <Leader>= :vertical resize +5<cr>
+
 " plugin keymappings
 
 " per file type specific commands
