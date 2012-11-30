@@ -33,3 +33,5 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source ./.bash_profile
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

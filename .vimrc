@@ -8,6 +8,7 @@ set path=./**
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set transparency=20
 
 filetype on " trigger the autocommand for filetype changes (used for tabbing etc. per file)
 filetype plugin on " allow a plugin to be loaded based on a filetype
