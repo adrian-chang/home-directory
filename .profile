@@ -20,5 +20,6 @@ export BUNDLER_BLACKLIST="guard"
 export ANDROID_HOME="/Users/adrian/Development/bin/android-sdk-macosx"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export GROOVY_HOME="/usr/local/Cellar/groovy/2.0.4/libexec"
+export GRADLE_OPTS="-Dorg.gradle.daemon=true"
 # fink
 . /sw/bin/init.sh
