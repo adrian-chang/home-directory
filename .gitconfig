@@ -1,6 +1,6 @@
 [user]
-	email =
-	name = 
+	email = 
+	name = Adrian C
 [difftool]
 	prompt = false
 [diff]
@@ -12,8 +12,10 @@
 [mergetool]
 	prompt = false
 [github]
-	token = 
+	token =
 	user = amchang
 [core]
 	excludesfile = /Users/adrian/.gitignore_global
 	editor = mvim -f
+[push]
+	default = matching

@@ -4,6 +4,7 @@ export EDITOR="mvim"
 export NODE_PATH="/usr/local/lib/jsctags:/usr/local/lib/node"
 # Where to look for files, look at brew bin first
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/adrian/Development/bin/android-sdk-macosx/tools"
+export PATH="$PATH:/Users/adrian/Development/bin/android-sdk-macosx/platform-tools"
 # Don't show hidden files
 defaults write com.apple.Finder AppleShowAllFiles NO 
 # source nvm
