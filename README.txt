@@ -9,6 +9,9 @@
  - View
    - Show Path and Status (space)
 3. Customize Dock
+4. Customize GMail
+ - Turn on lab features
+ - Set theme
 
 -- Software Install
 1. Install Dropbox
