@@ -20,7 +20,9 @@
 4. Install iTerm 2.0
  - Terminal
    - Unlimited scroll-back 
- - Use Ocean Colorscheme / solarized high constrast from Github
+ - Colors
+   - Use presents 
+     - Ocean Colorscheme / solarized high constrast from Github
  - Window 
    - Slight Transparency
    - New Window
