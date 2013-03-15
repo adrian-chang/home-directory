@@ -23,6 +23,10 @@
  - Use Ocean Colorscheme / solarized high constrast from Github
  - Window 
    - Slight Transparency
+   - New Window
+     - 250 Columns
+     - 50 Rows
+5. Install Hiss
 5. Install Xcode
  - Use app store or developer.apple.com/Downloads
  - Includes Dev tools (merge etc. /developer/utilites)
