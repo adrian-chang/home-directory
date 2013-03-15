@@ -1,19 +1,14 @@
 -- Development Enviroment Setup
 
 -- Initial Startup
-1. Register Product
- - Use work information	
-2. Create Apple ID
- - Use work e-mail
-3. Setup ITunes Payment
- - Remove CC when done with initial setup
-4. Customize Finder
+1. Register product to existing Apple ID
+2. Customize Finder
  - Preferences
    - Show more devices or locations as needed in the Finder or desktop
    - Show filename extensions
  - View
    - Show Path and Status (space)
-5. Customize Dock
+3. Customize Dock
 
 -- Software Install
 1. Install Dropbox
