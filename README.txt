@@ -28,6 +28,8 @@
    - New Window
      - 250 Columns
      - 50 Rows
+ - General
+   - Command zsh
 5. Install Hiss
 6. Install Xcode
  - Use app store or developer.apple.com/Downloads
