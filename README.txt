@@ -29,12 +29,10 @@
      - 250 Columns
      - 50 Rows
 5. Install Hiss
-5. Install Xcode
+6. Install Xcode
  - Use app store or developer.apple.com/Downloads
  - Includes Dev tools (merge etc. /developer/utilites)
  - Move FileMerge to Dock
-6. Install Apple Java Developer update
- - Use developer.apple.com
 7. Install Homebrew
 8. Install Macvim
  - Use brew
