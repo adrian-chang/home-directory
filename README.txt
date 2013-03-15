@@ -8,8 +8,11 @@
 3. Setup ITunes Payment
  - Remove CC when done with initial setup
 4. Customize Finder
- - Show Path and Status (space)
- - Preferences -> Show more devices or locations as needed in the Finder or desktop
+ - Preferences
+   - Show more devices or locations as needed in the Finder or desktop
+   - Show filename extensions
+ - View
+   - Show Path and Status (space)
 5. Customize Dock
 
 -- Software Install
