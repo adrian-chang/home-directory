@@ -41,6 +41,7 @@
 8. Install Macvim
  - Use brew
  - Symbolic link app to /applications
+ - http://clearfix.be/2012/08/05/fix-mountain-lion-10-8-python-ioerror-pyconfig-h-error/
 9. Install Google Voice Plugin
 10. Install Evernote
 11. Install Tunnelblick VPN
