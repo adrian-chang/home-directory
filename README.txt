@@ -52,6 +52,9 @@
 2. Need to select merge / difftool
 3. Setup SSH keys on new machine
 
+-- WGet
+1. brew install wget
+
 -- Ngnix
 1. Install Ngnix using brew
 
