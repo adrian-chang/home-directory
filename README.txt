@@ -51,6 +51,9 @@
 2. Need to select merge / difftool
 3. Setup SSH keys on new machine
 
+-- Ngnix
+1. Install Ngnix using brew
+
 -- Node
 1. Install Node Version Manager
  - https://github.com/creationix/nvm 
