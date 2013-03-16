@@ -30,6 +30,8 @@
      - 50 Rows
  - General
    - Command zsh
+   - Fun Addons
+     - https://github.com/robbyrussell/oh-my-zsh
 5. Install Hiss
 6. Install Xcode
  - Use app store or developer.apple.com/Downloads
