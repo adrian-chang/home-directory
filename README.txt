@@ -54,6 +54,9 @@
 -- Ngnix
 1. Install Ngnix using brew
 
+-- Hosts
+1. /etc/hosts .....
+
 -- Node
 1. Install Node Version Manager
  - https://github.com/creationix/nvm 
