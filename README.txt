@@ -88,18 +88,18 @@
 6. nvm alias default 0.6.6
 
 -- Ruby
-1. Install rvm
- - Single user installation
- - Source RVM to profile
- - rvm list known
-2. rvm install 1.9.2
-3. rvm use --default 1.9.2
-4. Create gemset
-5. Update gemset 
+1. Install rbenv
+ - https://github.com/sstephenson/rbenv
+2. rbenv install 1.9.3-p392
+3. rbenv global 1.9.3-p392
+4. rbenv gemset
+ - https://github.com/jamis/rbenv-gemset
+5. Create gemset
+6. Update gemset 
  - rvm [target] do gem update or gem update
-6. Ruby load path (1.9.2) dosen't scan current dir
-7. Ruby 1.9, gems are loaded by default, no require rubygems to get single path gems
-8. rubygems-bundler to avoid bundle exec 
+7. Ruby load path (1.9.2) dosen't scan current dir
+8. Ruby 1.9, gems are loaded by default, no require rubygems to get single path gems
+9. rubygems-bundler to avoid bundle exec 
 
 -- Vim Setup Notes
 1. To fix (gksudo:5045): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap"
@@ -120,10 +120,6 @@
 10. Rdb for Rails 3, :let g:ruby_debugger_default_script = 'script/rails server' (:Redebugger default)  
 11. Rdb (IMPORTANT FOR OS X) let g:ruby_debugger_progname = 'mvim'
 12. Rdb :RdbLog, :RdbEval, :RdbCond, :RdbStop
-
--- Growl
-1. Use Growl-Fork
-2. Growl_Notify Gem
 
 -- Development Enviroment Cleanup
 
