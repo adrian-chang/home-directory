@@ -58,6 +58,9 @@
 -- WGet
 1. brew install wget
 
+-- htop
+1. brew install htop
+
 -- Ngnix
 1. Install Ngnix using brew
 
