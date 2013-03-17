@@ -67,6 +67,10 @@
 -- Hosts
 1. /etc/hosts .....
 
+-- Java
+1. https://developer.apple.com/downloads/index.action
+ - Install Java OSX developer tools
+
 -- Node
 1. Install Node Version Manager
  - https://github.com/creationix/nvm 
