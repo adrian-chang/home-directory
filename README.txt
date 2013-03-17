@@ -58,11 +58,17 @@
 -- WGet
 1. brew install wget
 
+-- XCode
+1. Preferences
+  - Downloads
+    - Command Line Tools
+
 -- htop
 1. brew install htop
 
 -- Ngnix
 1. Install Ngnix using brew
+  - Config file: /usr/local/etc
 
 -- Hosts
 1. /etc/hosts .....
