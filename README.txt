@@ -109,7 +109,7 @@
  - git clone --recursive git://github.com/mozilla/doctorjs.git (doctorjs) (uses submodule) or git submodule init / update
  - Install latest node (<0.6)
  - Use ~/.ctags for custom language
-3. Ensure JSHint (node) / Ruby is installed for Syntastic
+3. Ensure JSHint (node) / Ruby / Python is installed for Syntastic
 4. For Command-T (liter t), make sure Vim has +Ruby (vim --version)
  - Compile C Extension
 5. For Vim-autocomplpop, it needs Vim-l9
