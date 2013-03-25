@@ -29,7 +29,7 @@ ZSH_THEME="gnzh"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew python github ruby)
+plugins=(git brew python github ruby node)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.profile
