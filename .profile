@@ -12,4 +12,6 @@ source ~/.nvm/nvm.sh
 # aliases
 alias dev='cd ~/Development/projects/'
 alias dev_server='ssh onnes.magneto.me'
+# python version
+[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 export JAVA_HOME=$(/usr/libexec/java_home)

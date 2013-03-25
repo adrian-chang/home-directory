@@ -101,6 +101,11 @@
 8. Ruby 1.9, gems are loaded by default, no require rubygems to get single path gems
 9. rubygems-bundler to avoid bundle exec 
 
+-- Python
+1. Python version management
+ - https://github.com/utahta/pythonbrew
+2. pythonbrew switch 3.x
+
 -- Vim Setup Notes
 1. To fix (gksudo:5045): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap"
  - apt-get install gtk2-engines-pixbuf
