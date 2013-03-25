@@ -11,4 +11,5 @@ defaults write com.apple.Finder AppleShowAllFiles NO
 source ~/.nvm/nvm.sh
 # aliases
 alias dev='cd ~/Development/projects/'
+alias dev_server='ssh onnes.magneto.me'
 export JAVA_HOME=$(/usr/libexec/java_home)
