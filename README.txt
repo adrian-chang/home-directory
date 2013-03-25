@@ -105,6 +105,8 @@
 1. Python version management
  - https://github.com/utahta/pythonbrew
 2. pythonbrew switch 3.x
+3. sudo easy_install pip
+4. pip install flake8 (checker)
 
 -- Vim Setup Notes
 1. To fix (gksudo:5045): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap"
