@@ -1,2 +1,2 @@
---type-add 
-ruby=slim
+--ignore-dir=node_modules
+--ignore-dir=vendor
