@@ -26,6 +26,7 @@ au VimEnter * :colorscheme desert " .vim/colors
 
 " command-t
 let g:CommandTMaxHeight=18 " needs to be done before it's loaded
+set wildignore+=vendor/**,node_modules/**
 nnoremap <silent> <Leader>[ :CommandT<CR>
 nnoremap <silent> <Leader>] :CommandTBuffer<CR>
 nnoremap <silent> <Leader>' :CommandTFlush<CR>
