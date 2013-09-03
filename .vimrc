@@ -65,6 +65,10 @@ nnoremap <Leader>0 :resize +5<cr>
 nnoremap <Leader>- :resize -5<cr>
 nnoremap <Leader>= :vertical resize +5<cr>
 
+" vim sessions
+let g:session_extension = '.bak' " .bak extensions for sessions
+let g:session_autosave_periodic = 5 " 5 minutes autosave sessions
+
 " plugin keymappings
 
 " per file type specific commands
