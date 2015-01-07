@@ -1,6 +1,6 @@
 [user]
-	email = 
-	name = amchang
+	email =
+	name = 
 [difftool]
 	prompt = false
 [diff]
@@ -17,5 +17,6 @@
 [core]
 	excludesfile = /Users/adrian/.gitignore_global
 	editor = mvim -f
+	quotepath = false
 [push]
 	default = matching

@@ -1,25 +1,5 @@
-# Copyright 2010 Wincent Colaiuta. All rights reserved.
-#
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions are met:
-#
-# 1. Redistributions of source code must retain the above copyright notice,
-#    this list of conditions and the following disclaimer.
-# 2. Redistributions in binary form must reproduce the above copyright notice,
-#    this list of conditions and the following disclaimer in the documentation
-#    and/or other materials provided with the distribution.
-#
-# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE
-# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-# POSSIBILITY OF SUCH DAMAGE.
+# Copyright 2010-2014 Greg Hurrell. All rights reserved.
+# Licensed under the terms of the BSD 2-clause license.
 
 module CommandT
   # Abuse the status line as a prompt.
@@ -46,8 +26,24 @@ module CommandT
       redraw
     end
 
+    # Remove word before cursor
+    def clear_prev_word!
+      suffix_length = @abbrev.length - @col
+      @abbrev.match(
+        %r{
+          (.*?)                 # prefix
+          \w*\s*                # word to clear
+          (.{#{suffix_length}}) # suffix
+          \z
+        }x
+      )
+      @abbrev = $~[1] + $~[2]
+      @col = @abbrev.length - suffix_length
+      redraw
+    end
+
     # Insert a character at (before) the current cursor position.
-    def add! char
+    def add!(char)
       left, cursor, right = abbrev_segments
       @abbrev = left + char + cursor + right
       @col += 1
@@ -101,6 +97,22 @@ module CommandT
       end
     end
 
+    def focus
+      unless @has_focus
+        @has_focus = true
+        redraw
+      end
+    end
+
+    def unfocus
+      if @has_focus
+        @has_focus = false
+        redraw
+      end
+    end
+
+  private
+
     def redraw
       if @has_focus
         prompt_highlight = 'Comment'
@@ -120,22 +132,6 @@ module CommandT
       set_status *components
     end
 
-    def focus
-      unless @has_focus
-        @has_focus = true
-        redraw
-      end
-    end
-
-    def unfocus
-      if @has_focus
-        @has_focus = false
-        redraw
-      end
-    end
-
-  private
-
     # Returns the @abbrev string divided up into three sections, any of
     # which may actually be zero width, depending on the location of the
     # cursor:
@@ -149,7 +145,7 @@ module CommandT
       [left, cursor, right]
     end
 
-    def set_status *args
+    def set_status(*args)
       # see ':help :echo' for why forcing a redraw here helps
       # prevent the status line from getting inadvertantly cleared
       # after our echo commands

@@ -1,0 +1,1265 @@
+" ~/.vim/sessions/default.bak:
+" Vim session script.
+" Created by session.vim 2.4.8 on 08 July 2014 at 17:06:16.
+" Open this file in Vim and run :source % to restore your session.
+
+set guioptions=egmrL
+silent! set guifont=Menlo\ Regular:h11
+if exists('g:syntax_on') != 1 | syntax on | endif
+if exists('g:did_load_filetypes') != 1 | filetype on | endif
+if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
+if exists('g:did_indent_on') != 0 | filetype indent off | endif
+if &background != 'dark'
+	set background=dark
+endif
+if !exists('g:colors_name') || g:colors_name != 'desert' | colorscheme desert | endif
+call setqflist([{'lnum': 12, 'col': 10, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'js/app/config/common.js', 'text': '        ''leaflet-google'': ''../vendor/leaflet-plugins/layer/tile/Google'','}, {'lnum': 63, 'col': 10, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'js/app/config/common.js', 'text': '        ''leaflet-google'': {'}, {'lnum': 9, 'col': 6, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'js/app/views/map/mapBellowBodyLarge.js', 'text': '    "leaflet-google",'}, {'lnum': 16, 'col': 10, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'js/default.js', 'text': '        ''leaflet-google'': ''../vendor/leaflet-plugins/layer/tile/Google'','}, {'lnum': 69, 'col': 10, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'js/default.js', 'text': '        ''leaflet-google'': {'}, {'lnum': 35, 'col': 16, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'tasks/options/requirejs.js', 'text': '              ''leaflet-google'': ''../vendor/leaflet-plugins/layer/tile/Google'','}, {'lnum': 80, 'col': 14, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'tasks/options/requirejs.js', 'text': '            ''leaflet-google'': ''empty:'','}, {'lnum': 119, 'col': 22, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'tasks/options/requirejs.js', 'text': '                    ''leaflet-google'': ''empty:'','}, {'lnum': 8, 'col': 6, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'test/app/views/map/mapBellowBodyLargeSpec.js', 'text': '    ''leaflet-google'','}, {'lnum': 18, 'col': 10, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'test/main.js', 'text': '        ''leaflet-google'': ''../vendor/leaflet-plugins/layer/tile/Google'','}, {'lnum': 69, 'col': 10, 'valid': 1, 'vcol': 0, 'nr': -1, 'type': '', 'pattern': '', 'filename': 'test/main.js', 'text': '        ''leaflet-google'': {'}])
+let SessionLoad = 1
+if &cp | set nocp | endif
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let v:this_session=expand("<sfile>:p")
+silent only
+cd ~/Development/projects/roberto
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+badd +9 css/main.css
+badd +1 sass/_base.scss
+badd +41 sass/magnet/_createEdit.scss
+badd +54 js/app/views/magnet/calendarItemDetailedMixin.js
+badd +66 js/app/routers/main.js
+badd +35 js/app/views/calendar/header/large.js
+badd +27 js/app/views/calendar/header/medium.js
+badd +363 js/app/views/common/datePicker.js
+badd +55 js/app/views/common/dialog.js
+badd +1 js/app/views/hotkeyMixin.js
+badd +89 js/app/views/layouts/accordion/header/dateSelector.js
+badd +17 js/app/views/magnet/detailed/footer.js
+badd +34 js/app/views/map/popup.js
+badd +41 js/app/views/setting/searchBar.js
+badd +191 js/app/views/setting.js
+badd +215 test/app/routers/mainSpec.js
+badd +95 test/app/views/calendar/header/largeSpec.js
+badd +32 test/app/views/calendar/header/mediumSpec.js
+badd +226 test/app/views/common/datePickerSpec.js
+badd +1 test/app/views/common/dialogSpec.js
+badd +31 test/app/views/common/pivotDialogSpec.js
+badd +35 test/app/views/hotkeyMixinSpec.js
+badd +10 test/app/views/layouts/accordion/header/dateSelectorSpec.js
+badd +52 test/app/views/magnet/detailed/footerSpec.js
+badd +10 test/app/views/setting/searchBarSpec.js
+badd +48 test/app/views/settingSpec.js
+badd +77 test/app/views/calendar/week/weekBody/draggingMixinSpec.js
+badd +53 test/app/views/calendar/week/weekBody/mouseMixinSpec.js
+badd +44 test/app/views/calendar/week/weekFooter/draggingMixinSpec.js
+badd +1 test/app/views/calendar/week/weekFooterSpec.js
+badd +26 test/app/views/magnet/createEdit/where/whereAutocompleteSpec.js
+badd +43 js/app/views/magnet/createEdit/where/whereAutocomplete.js
+badd +18 test/app/utils/baseMixinSpec.js
+badd +26 js/app/collections/search.js
+badd +33 test/app/collections/searchSpec.js
+badd +75 js/app/utils/baseMixin.js
+badd +83 test/app/collections/baseSpec.js
+badd +62 js/app/collections/base.js
+badd +31 js/app/collections/search/refpoint.js
+badd +224 js/app/views/base.js
+badd +25 test/app/views/calendar/agenda/overlapTimeSpec.js
+badd +54 js/app/views/calendar/agenda/overlapTime.js
+badd +139 test/app/views/magnet/createEditSpec.js
+badd +62 js/app/views/common/pivotDialog.js
+badd +28 test/app/models/main/socketMixinSpec.js
+badd +57 js/app/models/main/socketMixin.js
+badd +12 js/app/views/common/tagSwitch/tagSwitchButton.js
+badd +12 test/app/views/common/tagSwitch/tagSwitchButtonSpec.js
+badd +14 karma.conf.js
+badd +173 test/app/views/baseSpec.js
+badd +142 test/app/collections/magnetsSpec.js
+badd +183 test/app/mainSpec.js
+badd +45 test/app/models/tagSpec.js
+badd +40 test/app/views/calendar/week/weekBody/chevronMixinSpec.js
+badd +98 test/app/views/common/tagSwitchSpec.js
+badd +14 test/app/views/search/searchResultSpec.js
+badd +101 js/app/main.js
+badd +285 ~/Downloads/jasmine-2.0.0/dist/jasmine-standalone-2.0.0/lib/jasmine-2.0.0/jasmine.js
+badd +1 js/app/views/calendar/week/weekBody/chevronMixin.js
+badd +49 js/app/views/search/searchResult.js
+badd +57 js/app/models/tag.js
+badd +116 js/app/models/magnet.js
+badd +360 js/app/collections/magnets.js
+badd +92 js/app/views/common/tagSwitch.js
+badd +8 test/app/models/magnet/trackingMixinSpec.js
+badd +1 test/app/models/main/socket/disconnectHandlerSpec.js
+badd +18 test/app/models/travelSpec.js
+badd +28 test/app/views/calendar/agenda/sharedSpec.js
+badd +108 test/app/views/calendar/calendarBellowBodyLargeSpec.js
+badd +123 test/app/views/calendar/calendarItemSpec.js
+badd +50 test/app/views/calendar/weatherHeaderAgendaMixinSpec.js
+badd +33 test/app/views/calendar/week/weekBody/overlappingMixinSpec.js
+badd +11 test/app/views/common/autocompleteSelectSpec.js
+badd +11 test/app/views/common/recurrenceTypeSpec.js
+badd +84 test/app/views/magnet/createEdit/busyTypeSpec.js
+badd +9 test/app/views/magnet/createEdit/fieldSpec.js
+badd +45 test/app/views/magnet/createEdit/notOrganizerSpec.js
+badd +59 test/app/views/magnet/createEdit/tags/tagsAutocompleteSpec.js
+badd +62 test/app/views/magnet/createEdit/travelTime/fromAutocompleteSpec.js
+badd +40 test/app/views/magnet/createEdit/travelTime/transitTypeSpec.js
+badd +20 test/app/views/magnet/createEdit/when/timeZoneSpec.js
+badd +29 test/app/views/magnet/createEdit/where/refpointAutocompleteSpec.js
+badd +14 test/app/views/magnet/createEditMixinSpec.js
+badd +43 test/app/views/magnet/detailedSpec.js
+badd +16 test/app/views/magnet/shareSpec.js
+badd +40 test/app/views/magnet/startDateAutocompleteSpec.js
+badd +42 test/app/views/magnet/tags/fullSyncTagsSpec.js
+badd +1 test/app/views/magnet/tagsSpec.js
+badd +38 test/app/views/mainSpec.js
+badd +30 test/app/views/search/searchBellowBodyLargeSpec.js
+badd +12 test/app/views/setting/contextListSpec.js
+badd +45 test/app/views/setting/notificationIndicatorSpec.js
+badd +1 test/app/views/setting/notificationsSpec.js
+badd +106 test/app/views/task/listMixinSpec.js
+badd +12 test/app/views/task/recommendedTaskItemSpec.js
+badd +43 test/app/views/task/taskBellowBodyLargeSpec.js
+badd +15 test/app/views/task/taskBellowBodyMediumSpec.js
+badd +12 test/app/views/task/taskItemSpec.js
+badd +80 js/app/models/travel.js
+badd +85 js/app/views/calendar/calendarBellowBodyLarge.js
+badd +22 js/app/views/calendar/calendarItem.js
+badd +42 js/app/views/calendar/week/weekHeader.js
+badd +53 js/app/views/calendar/week/weekBody/overlappingMixin.js
+badd +55 js/app/views/task/draggingMixin.js
+badd +104 js/app/views/calendar/week/weekFooter/draggingMixin.js
+badd +31 js/app/views/common/autocompleteSelect.js
+badd +30 js/app/views/common/recurrence/recurrenceType.js
+badd +54 js/app/views/magnet/createEdit/busyType.js
+badd +30 js/app/views/magnet/createEdit/field.js
+badd +46 js/app/views/magnet/createEdit/notOrganizer.js
+badd +92 js/app/views/magnet/createEdit/tags/tagsAutocomplete.js
+badd +46 js/app/views/magnet/createEdit/travelTime/fromAutocomplete.js
+badd +82 js/app/views/magnet/createEdit/travelTime/transitType.js
+badd +100 js/app/views/magnet/createEdit/when/timeZone.js
+badd +36 js/app/views/magnet/createEdit/where/refpointAutocomplete.js
+badd +1 js/app/views/magnet/createEditMixin.js
+badd +61 js/app/views/magnet/detailed.js
+badd +66 js/app/views/magnet/share.js
+badd +71 js/app/views/magnet/createEdit/when/startDateAutocomplete.js
+badd +1 js/app/views/magnet/share/startDateAutocomplete.js
+badd +104 js/app/views/magnet/tags/fullSyncTags.js
+badd +1 js/app/views/magnet/tags.js
+badd +75 js/app/views/main.js
+badd +88 js/app/views/search/searchBellowBodyLarge.js
+badd +101 js/app/views/setting/contextList.js
+badd +77 js/app/views/setting/notificationIndicator.js
+badd +21 test/app/collections/notificationsSpec.js
+badd +83 js/app/views/setting/notification.js
+badd +50 js/app/views/setting/notifications.js
+badd +174 js/app/views/task/listMixin.js
+badd +28 js/app/views/task/recommendedTaskItem.js
+badd +16 js/app/views/task/taskBellowBodyLarge.js
+badd +18 js/app/views/task/taskBellowBodyMedium.js
+badd +88 js/app/views/task/taskItem.js
+badd +9 test/app/views/magnet/detailed/allDayEmbeddedSpec.js
+badd +9 test/app/views/common/expandableTextAreaSpec.js
+badd +1 js/app/views/common/expandableTextArea.js
+badd +31 test/app/views/magnet/detailed/event/solo/headerSpec.js
+badd +9 test/app/collections/search/tagsSpec.js
+badd +32 js/app/collections/search/tags.js
+badd +1 js/app/views/map/iconSpec.js
+badd +38 js/app/views/map/icon.js
+badd +46 test/app/models/context/adHocSpec.js
+badd +255 js/app/views/calendar/week/weekBody.js
+badd +252 test/app/views/calendar/week/weekBodySpec.js
+badd +165 js/app/models/context/adHoc.js
+badd +79 js/app/models/magnet/date/gettersMixin.js
+badd +86 test/app/models/magnet/date/gettersMixinSpec.js
+badd +48 js/app/views/magnet/tags/tag.js
+badd +26 test/app/views/magnet/detailed/headerSpec.js
+badd +37 test/app/views/magnet/tags/tagSpec.js
+badd +1 js/app/collections/magnet/recommendedTags.js
+badd +38 test/app/collections/magnet/recommendedTagsSpec.js
+badd +30 test/app/collections/magnet/tagsSpec.js
+badd +68 js/app/models/magnet/tagsMixin.js
+badd +21 test/app/models/magnet/tagsMixinSpec.js
+badd +48 test/app/models/magnet/eventMixinSpec.js
+badd +10 test/app/views/common/recurrence/intervalSpec.js
+badd +9 js/app/views/common/recurrence/interval.js
+badd +51 js/app/views/common/recurrence/daySelect.js
+badd +25 test/app/views/magnet/createEdit/travelTimeSpec.js
+badd +35 test/app/views/task/taskFiltersSpec.js
+badd +46 test/app/views/task/taskSortsSpec.js
+badd +9 test/app/views/task/taskBellowBodySpec.js
+badd +1 js/app/views/magnet/createEdit/when/startDateDatePicker.js
+badd +136 js/app/views/magnet/createEdit/when/whenAutocomplete.js
+badd +90 js/app/views/calendar/calendarBellowBody.js
+badd +111 test/app/views/calendar/calendarBellowBodySpec.js
+badd +9 test/app/views/calendar/agenda/freeTimeSpec.js
+badd +1 js/app/views/calendar/agenda/freeTime.js
+badd +106 js/app/views/baseDraggingMixin.js
+badd +32 test/app/views/baseDraggingMixinSpec.js
+badd +24 test/app/models/notification/magnetSpec.js
+badd +13 js/app/models/notification/magnet.js
+badd +120 test/app/models/magnetSpec.js
+badd +25 js/app/views/magnet/detailed/allDayEmbedded.js
+badd +193 js/app/views/map/mapBellowBodyLarge.js
+badd +169 test/app/views/map/mapBellowBodyLargeSpec.js
+badd +208 js/app/views/calendar/week/weekFooter.js
+badd +15 test/app/views/task/draggingMixinSpec.js
+badd +45 js/app/views/calendar/week/weekBody/draggingMixin.js
+badd +57 js/app/views/calendar/week/weekBody/mouseMixin.js
+badd +129 js/app/views/common/arrowMixin.js
+badd +16 package.json
+badd +1 js/app/views/calendar/day/dayBody.js
+badd +24 test/app/views/calendar/day/dayBodySpec.js
+badd +1 test/app/views/calendar/day/dayFooterSpec.js
+badd +25 test/main.js
+badd +32 test/app/views/calendar/week/weekHeaderSpec.js
+badd +14 js/app/views/map/large/draggingMixin.js
+badd +8 test/app/views/magnet/popupSpec.js
+badd +13 test/app/views/map/large/draggingMixinSpec.js
+badd +230 vendor/backbone/backbone.js
+badd +44 test/app/views/common/tooltipSpec.js
+badd +1 test/app/views/magnet/detailed/event/embedded/headerSpec.js
+badd +13 test/app/views/magnet/tags/tooltipSpec.js
+badd +17 test/app/views/setting/tourSpec.js
+badd +61 js/app/views/magnet/detailed/whoTooltip.js
+badd +924 sass/_calendar.scss
+badd +26 test/app/views/magnet/detailed/whoTooltipSpec.js
+badd +147 js/app/views/setting/tour.js
+badd +72 test/app/views/common/arrowMixinSpec.js
+badd +17 test/app/views/setting/menuIndicatorSpec.js
+badd +151 js/app/views/magnet/createEdit.js
+badd +92 js/app/collections/notifications.js
+badd +151 sass/setting/_notifications.scss
+badd +64 sass/common/_dialog.scss
+badd +34 test/app/views/magnet/tags/fullSyncTagSpec.js
+badd +99 js/app/collections/search/timeZones.js
+badd +66 js/app/views/calendar/timeZone.js
+badd +57 test/app/views/calendar/timeZoneSpec.js
+badd +1 js/app/views/magnet/createEdit/when/dueTimeZone.js
+badd +1 js/app/config/timeZones.js
+badd +14 js/app/views/calendar/week/weekHeader.jst
+badd +35 bower.json
+badd +63 js/app/config/common.js
+badd +69 js/app/models/user/preferences.js
+badd +165 js/app/models/user.js
+badd +13 js/app/views/common/recurrence.jst
+badd +32 tasks/options/requirejs.js
+badd +23 tasks/options/uglify.js
+badd +60 test/app/models/user/preferencesSpec.js
+badd +69 js/app/views/common/tooltip.js
+badd +14 js/app/views/calendar/timeZone.jst
+badd +1 js/app/views/common/dialog.jst
+badd +1 sass/calendar/_timeZone.scss
+badd +24 sass/_variables_mixins.scss
+badd +38 sass/main.scss
+badd +1 sass/common/_pivotDialog.scss
+badd +61 js/app/views/calendar/calendarBody.js
+badd +106 js/app/collections/magnets/calendarMixin.js
+badd +127 js/app/views/calendar/agenda/shared.js
+badd +167 js/app/views/magnet/createEdit/submit.js
+badd +72 js/app/views/setting/contexts.js
+badd +83 js/app/views/calendar/timeZone/difference.js
+badd +15 test/app/views/calendar/timeZone/differenceSpec.js
+badd +3 js/app/views/calendar/timeZone/difference.jst
+badd +18 js/app/views/setting.jst
+badd +2 js/app/views/setting/contexts.jst
+badd +13 test/app/views/setting/contextsSpec.js
+badd +42 sass/common/_tooltip.scss
+badd +25 js/app/models/magnet/trackingMixin.js
+badd +17 js/app/utils/storage.js
+badd +1 test/app/utils/storageSpec.js
+badd +46 sass/setting/_contexts.scss
+badd +15 test/app/models/contextSpec.js
+badd +1 js/app/models/context.js
+badd +1 js/app/views/magnet/createEdit/busyType.jst
+badd +1 js/app/views/magnet/createEdit/busy.jst
+badd +130 tasks/options/shell.js
+badd +18 extension.js
+badd +11756 extension1.js
+badd +1 Gruntfile.js
+badd +850 ~/Downloads/extension.js
+badd +3 js/app/views/calendar/header/large.jst
+badd +148 sass/common/_switch.scss
+badd +30 js/app/views/setting/notification/magnetCancelled.js
+badd +137 js/app/models/notification.js
+badd +35 js/app/models/notification/comment.js
+badd +44 js/app/views/setting/notification/rsvpUpdated.js
+badd +19 js/app/views/setting/notification/comment.js
+badd +107 js/app/views/setting/notification/magnetUpdated.js
+badd +18 js/app/views/setting/notification/magnetCreatedUpdatedMixin.js
+badd +19 test/app/views/setting/notification/magnetCancelledSpec.js
+badd +1 js/app/views/setting/notification/magnetCancelled.jst
+badd +41 test/app/views/common/recurrenceSpec.js
+badd +138 js/app/views/common/recurrence.js
+badd +87 js/app/views/magnet/createEdit/where.js
+badd +77 js/app/views/magnet/createEdit/when.js
+badd +77 js/app/views/magnet/createEdit/travelTime.js
+badd +53 js/app/views/calendar/week/dayBound.js
+badd +119 js/app/models/magnet/ttmMixin.js
+badd +86 test/app/models/magnet/ttmMixinSpec.js
+badd +13 js/app/collections/context/adHocs.js
+badd +36 test/app/collections/context/adHocsSpec.js
+badd +51 js/app/collections/search/where.js
+badd +35 js/app/collections/tags.js
+badd +8 tasks/options/karma.js
+badd +31 js/app/views/magnet/detailed/event/solo/footer.jst
+badd +1 js/app/views/magnet/detailed/task/solo/footer.jst
+badd +19 sass/_fonts.scss
+badd +60 test/app/views/magnet/detailed/event/solo/footerSpec.js
+badd +77 js/app/models/magnet/date/settersMixin.js
+badd +6 js/app/views/magnet/createEdit/submit.jst
+badd +131 test/app/views/magnet/createEdit/submitSpec.js
+badd +18 test/app/views/magnet/detailed/task/solo/footerSpec.js
+badd +33 ~/Downloads/new/style.css
+badd +11 js/app/views/setting/notification/rsvpUpdated.jst
+badd +24 js/app/views/magnet/createEdit.jst
+badd +1 js/app/views/setting/notification/magnetCreated.js
+badd +4 js/app/views/setting/notification/magnetUpdated.jst
+badd +8 js/app/models/notificationMixin.js
+badd +33 js/app/views/setting/notification/magnetCreated.jst
+badd +4 js/app/views/calendar/header/medium.jst
+badd +12 test/app/views/setting/notification/magnetCreatedSpec.js
+badd +29 test/app/models/notificationMixinSpec.js
+badd +40 js/app/views/magnet/createEdit/class.js
+badd +73 test/app/views/magnet/createEdit/classSpec.js
+badd +1 config.rb
+badd +29 tasks/options/assemble.js
+badd +49 js/app/views/setting/help.js
+badd +24 test/app/views/setting/helpSpec.js
+badd +10 js/app/views/setting/help.jst
+badd +149 sass/calendar/_share.scss
+badd +26 sass/common/_help.scss
+badd +77 sass/mixins/_dialog.scss
+badd +11 js/app/views/magnet/share.jst
+badd +1 js/app/views/magnet/share/conversation.jst
+badd +33 js/app/models/conversation.js
+badd +1 test/app/views/magnet/share/conversationSpec.js
+badd +24 js/app/models/ticket.js
+badd +106 sass/mixins/_button.scss
+badd +324 js/app/views/magnet/detailed/body.js
+badd +95 test/app/views/magnet/detailed/bodySpec.js
+badd +64 js/default.js
+badd +120 js/app/models/magnet/attachment.js
+badd +81 js/app/utils/log.js
+badd +23 js/app/models/base.js
+badd +1 js/app/config/values.js
+badd +316 js/app/models/magnet/dateMixin.js
+badd +276 test/app/models/magnet/dateMixinSpec.js
+badd +92 js/app/models/magnet/templateMixin.js
+badd +526 test/app/models/magnet/date/settersMixinSpec.js
+badd +48 js/app/views/magnet/createEdit/when/startTimeAutocomplete.js
+badd +1 js/app/views/magnet/share/endDateAutocomplete.js
+badd +8 test/app/models/ticketSpec.js
+badd +9 js/app/views/search/helpSuccess.jst
+badd +112 js/app/views/common/magnetSwitch.js
+badd +45 sass/_bellow.scss
+badd +9 js/app/views/setting/helpSuccess.jst
+badd +39 js/app/models/magnet/attachmentsMixin.js
+badd +83 js/app/views/magnet/createEdit/attachments.js
+badd +195 js/app/models/magnet/helperMixin.js
+badd +20 js/app/views/magnet/createEdit/what.js
+badd +33 js/app/views/common/recurrence/startEndTime.js
+badd +1 templates/layouts/timezone.hbs
+badd +1 vendor/moment-timezone/moment-timezone.json
+badd +1 vendor/moment-timezone/moment-timezone-data.html
+badd +1 vendor/moment-timezone/moment-timezone-data.js
+badd +464 vendor/moment-timezone/moment-timezone.js
+badd +1 vendor/moment-timezone/min/moment-timezone.min.js
+badd +15 tasks/deployment.js
+badd +48 js/app/views/magnet/createEdit/attachment.js
+badd +129 sass/_navbar.scss
+badd +8 js/app/views/magnet/detailed/body.jst
+badd +43 js/app/views/magnet/detailed/frame.js
+badd +20 js/app/views/magnet/detailed/event/solo.js
+badd +5 js/app/views/magnet/detailed/notes.jst
+badd +32 js/app/views/magnet/detailed/task/solo/header.js
+badd +35 test/app/views/magnet/createEdit/whatSpec.js
+badd +24 js/app/views/magnet/detailed/embedded.js
+badd +44 js/app/views/magnet/detailed/ttm/solo/header.js
+badd +39 js/app/views/magnet/detailed/header.js
+badd +67 js/app/views/magnet/share/shareType.js
+badd +119 js/app/models/magnet/taskMixin.js
+badd +51 test/app/models/magnet/taskMixinSpec.js
+badd +9 js/app/views/setting/tour/tags.jst
+badd +10 js/app/views/setting/tour/todos.jst
+badd +8 js/app/views/magnet/createEdit/series.jst
+badd +27 sass/mixins/_tour.scss
+badd +89 sass/setting/_tour.scss
+badd +3 js/app/views/magnet/createEdit/class.jst
+badd +1 js/app/models/main/socket/notificationHandlers.js
+badd +1 js/app/collections/notification/comments.js
+badd +1 js/app/views/setting/notification/comment.jst
+badd +1 js/app/views/setting/notification/generic.js
+badd +1 js/app/views/setting/notification/generic.jst
+badd +10 test/app/views/setting/notification/genericSpec.js
+badd +30 js/app/collections/search/when.js
+badd +246 js/app/views/task/filmTaskList.js
+badd +87 test/app/views/task/filmTaskListSpec.js
+badd +1 js/app/views/magnet/share/when.js
+badd +31 js/lib/extension.js
+badd +17266 extension.min.js
+badd +7 templates/partials/libStart.hbs
+badd +38 vendor/lodash/dist/lodash.underscore.js
+badd +27 js/app/models/main/socket/disconnectHandler.js
+badd +27 js/app/collections/magnets/weatherMixin.js
+badd +18 test/app/collections/magnets/calendarMixinSpec.js
+badd +1 js/app/views/calendar/week/weekBody/timeline.jst
+badd +378 sass/magnet/detailed/_frame.scss
+badd +1 js/app/views/magnet/detailed/ttm/embedded.js
+badd +33 js/app/views/calendar/agenda/embedded.js
+badd +1 test/app/views/magnet/detailed/ttm/embeddedSpec.js
+badd +23 test/app/views/magnet/detailed/frameSpec.js
+badd +1 js/app/config/tracking.js
+badd +195 sass/calendar/_agenda.scss
+badd +28 js/app/views/calendar/week/weekBody.jst
+badd +18 js/app/views/setting/menu.jst
+badd +41 js/app/views/setting/menu.js
+badd +73 sass/setting/_menu.scss
+badd +5 Gemfile
+badd +30 Gemfile.lock
+badd +10 tasks/options/watch.js
+badd +1 tasks/options/concurrent.js
+badd +2 tasks/options/compass.js
+badd +21 js/app/models/notification/user.js
+badd +103 test/app/models/userSpec.js
+badd +45 js/app/views/magnet/createEdit/notes.js
+badd +30 js/app/views/magnet/createEdit/notesExpandableTextArea.js
+badd +1 js/app/views/calendar/week/weekBody/timelineClock.jst
+badd +94 js/app/views/magnet/createEdit/when/timeAutocomplete.js
+badd +95 js/app/views/common/autocomplete.js
+badd +76 build/app/views/common/autocomplete.js
+badd +1 js/app/models/main/socket/.notificationHandlers.js.swp
+badd +3 .bowerrc
+badd +23 main.html
+badd +14 templates/layouts/index.hbs
+badd +7 js/app/views/magnet/createEdit/what.jst
+badd +1 test/app/views/magnet/createEdit/notesExpandableTextAreaSpec.js
+badd +21 js/app/views/task/quickTaskMixin.js
+badd +27 build/app/views/task/taskBellowBody.js
+badd +26 js/app/views/task/activeTaskList.js
+badd +6 js/app/views/task/sortableTaskList.jst
+badd +24 test/app/views/task/quickTaskMixinSpec.js
+badd +1 js/app/views/task/sortableTaskList.js
+badd +27 test/app/views/activeTaskListSpec.js
+badd +38 js/app/views/task/recommendedTaskList.js
+badd +26 js/app/models/main/socket/magnetHandlers.js
+badd +23 build/app/collections/magnets/calendarMixin.js
+badd +1 sass/common/_switch.scss,\ in\ \`border-radius\'
+badd +1 js/app/views/calendar/week/allDayWeek.js
+badd +105 test/app/views/calendar/week/bodyLargeMixinSpec.js
+badd +56 js/app/views/calendar/week/bodyLargeMixin.js
+badd +41 js/app/views/calendar/month/header.js
+badd +317 js/app/views/calendar/month/body.js
+badd +1 js/app/models/main/spanMixin.js
+badd +87 test/app/models/main/spanMixinSpec.js
+badd +1 js/app/routers/base.js
+badd +19 js/app/views/calendar/calendarBellowBodyMedium.js
+badd +1 js/app/views/calendar/calendarFooter.js
+badd +55 js/app/views/task/taskFilterSort.js
+badd +34 js/app/views/layouts/accordion/header/dateSelectorSmall.js
+badd +5 js/app/views/layouts/accordion/header/dateSelector.jst
+badd +1 js/app/views/task/taskItemRetain.js
+badd +1 js/app/views/magnet/detailedMixin.js
+badd +96 js/app/views/setting/hotkeyLayout.js
+badd +2 js/app/views/layouts/accordion/bellowBody.js
+badd +1 js/app/views/task/taskBellowBody.js
+badd +14 js/app/views/calendar/month/header.jst
+badd +1 test/app/views/calendar/month/body.js
+badd +143 test/app/views/calendar/month/bodySpec.js
+badd +35 test/app/views/calendar/month/headerSpec.js
+badd +1 js/app/views/calendar/month/body.jst
+badd +28 js/app/views/setting/hotkeyLayout.jst
+badd +11 js/app/views/calendar/calendarHeader.js
+badd +1 test/app/views/calendar/calendarHeaderSpec.js
+badd +67 test/app/views/calendar/calendarBodySpec.js
+badd +1 what
+badd +17 js/app/views/magnet/detailed/solo.js
+badd +16 js/app/views/magnet/detailed/task/solo/header.jst
+badd +15 sass/magnet/_detailed.scss
+badd +40 js/app/models/magnet/eventMixin.js
+badd +529 vendor/mousetrap/mousetrap.js
+badd +2 js/app/views/task/taskBellowBodyMedium.jst
+badd +9 js/app/views/task/taskFilterSort.jst
+badd +1 js/app/views/calendar/month/item.js
+badd +1 test/app/views/calendar/month/item.js
+badd +1 js/app/views/calendar/month/item.jst
+badd +16 js/app/views/calendar/week/dayBound.jst
+badd +9 js/app/views/magnet/detailed/allDay.jst
+badd +1 test/app/views/calendar/mouseMixin.js
+badd +140 js/app/views/calendar/mouseMixin.js
+badd +130 test/app/views/calendar/mouseMixinSpec.js
+badd +8 js/app/views/magnet/detailed/task/embedded.js
+badd +20 js/app/views/magnet/detailed/task/item.js
+badd +17 js/app/views/magnet/detailed/task/solo/footer.js
+badd +69 test/app/views/setting/hotkeyLayoutSpec.js
+badd +51 sass/setting/_hotkeyLayout.scss
+badd +103 js/app/views/common/socketBanner.js
+badd +100 test/app/views/common/socketBannerSpec.js
+badd +30 js/app/views/calendar/agenda/shared.jst
+badd +53 sass/common/_socketBanner.scss
+badd +74 sass/mixins/_arrow.scss
+badd +31 js/app/models/syncTable/binding.js
+badd +27 js/app/collections/syncTable.js
+badd +7 js/app/views/common/socketBanner.jst
+badd +1 js/app/models/socket.js
+badd +7 js/app/views/setting/contextList.jst
+badd +20 js/app/views/setting/syncStatus.js
+badd +13 test/app/views/setting/syncStatusSpec.js
+badd +24 js/app/views/setting/menuIndicator.js
+badd +10 sass/setting/_syncStatus.scss
+badd +1 js/app/views/setting/syncStatus.jst
+badd +3 js/app/views/setting/menuIndicator.jst
+badd +474 vendor/font-awesome/css/font-awesome.css
+badd +1 js/app/views/magnet/detailed/error.jst
+badd +13 js/app/models/main/syncHandlers.js
+badd +1 test/js/app/models/main/syncHandlersSpec.js
+badd +8 test/app/models/main/syncHandlersSpec.js
+badd +1 js/app/collections/bindings.js
+badd +1 test/app/models/main/socket/syncHandlersSpec.js
+badd +1 js/app/models/main/socket/syncHandlers.js
+badd +1 test/app/models/bindings/bindingSpec.js
+badd +1 js/app/models/bindings/binding.js
+badd +1 test/app/collections/bindingsSpec.js
+badd +18 js/app/views/map/mapBellow.js
+badd +45 js/app/collections/magnets/mapMixin.js
+badd +53 js/app/views/calendar/week/multiDayTop.js
+badd +41 js/app/views/calendar/week/multiDayBottom.js
+badd +157 js/app/models/magnet/recurrenceMixin.js
+badd +66 js/app/views/magnet/createEdit/who.js
+badd +37 js/app/views/map/popup/event.js
+badd +1 vendor/leaflet/leaflet.js
+badd +4068 vendor/leaflet/leaflet-src.js
+badd +23 vendor/leaflet/leaflet.css
+badd +77 sass/_map.scss
+badd +23 js/app/views/map/popup/task.js
+badd +29 test/app/views/map/popup/eventSpec.js
+badd +1 test/app/views/map/popup/taskSpec.js
+badd +34 test/app/models/magnet/templateMixinSpec.js
+badd +13 js/app/views/magnet/createEdit/attendees.jst
+badd +8 js/app/views/magnet/createEdit/who.jst
+badd +69 js/app/models/magnet/whereMixin.js
+badd +40 test/app/models/magnet/whereMixinSpec.js
+badd +1 test/app/views/calendar/week/dayBoundSpec.js
+badd +21 test/app/views/calendar/week/multiDayTopSpec.js
+badd +125 test/app/models/magnet/helperMixinSpec.js
+badd +77 test/app/models/magnet/recurrenceMixinSpec.js
+badd +55 test/app/views/calendar/month/itemSpec.js
+badd +45 sass/common/_datePicker.scss
+badd +37 js/app/views/magnet/createEdit/travelTime.jst
+badd +53 js/app/views/common/select.js
+badd +1 js/app/views/calendar/travelTime.jst
+badd +64 test/app/views/common/selectSpec.js
+badd +42 test/app/views/common/autocompleteSpec.js
+badd +54 test/app/views/setting/menuSpec.js
+badd +30 vendor/markdown/index.0-beta1
+badd +1 vendor/markdown/lib/index.js
+badd +1 vendor/markdown/src/markdown.js
+badd +47 vendor/markdown/README.markdown
+badd +27 js/app/views/magnet/detailed/event/solo/header.js
+badd +1 js/app/views/calendar/week/weatherTooltip.jst
+badd +19 js/app/views/calendar/calendarDatePicker.js
+badd +10 test/app/collections/magnets/weatherMixinSpec.js
+badd +28 js/app/views/calendar/weatherHeaderAgendaMixin.js
+badd +2 js/app/views/calendar/month/dayWeather.js
+badd +1 js/app/views/calendar/month/dayWeather.jst
+badd +63 js/app/views/setting/notification/uncompletedTask.js
+badd +25 vendor/mout/src/index.js
+badd +33 js/app/views/calendar/agenda/standalone.js
+badd +12 test/app/views/magnet/createEdit/tagsSpec.js
+badd +1 test/app/models/main/socket/magnetHandlersSpec.js
+badd +19 js/app/views/magnet/createEdit/tags.js
+badd +45 js/app/views/magnet/tags/fullSyncTag.js
+badd +36 js/app/collections/magnet/attachments.js
+badd +158 js/app/collections/magnet/tags.js
+badd +10 js/app/views/calendar/week/weekFooter.jst
+badd +43 js/app/views/magnet/createEdit/tags/sortableTags.js
+badd +73 test/app/utils/logSpec.js
+badd +24 sass/common/_select.scss
+badd +48 js/app/models/magnet/tag.js
+badd +11 js/app/utils/number.js
+badd +3 js/app/views/calendar/week/allDayWeek.jst
+badd +23 js/app/views/common/magnetSwitch.jst
+badd +1 js/app/views/common/tagSwitch/tagSwitchButton.jst
+badd +8 js/app/views/common/tagSwitch.jst
+badd +1 js/app/views/magnet/createEdit/travelTime/transitTypeItem.jst
+badd +2 js/app/views/magnet/createEdit/visibility.jst
+badd +49 js/app/views/magnet/detailed/event/solo/footer.js
+badd +1 js/app/views/magnet/detailed/tags.js
+badd +28 js/app/views/magnet/detailed/task/detailedMixin.js
+badd +27 js/app/views/magnet/detailed/task/item/header.js
+badd +1 js/app/views/magnet/detailed/task/solo.js
+badd +6 js/app/views/magnet/tags/tag.jst
+badd +29 js/app/views/map/mapBellowBodyMedium.js
+badd +1 js/app/views/map/mapBellowBodyMedium.jst
+badd +1 test/app/collections/tagsSpec.js
+badd +41 test/app/views/calendar/week/allDayWeekSpec.js
+badd +49 test/app/views/magnet/calendarItemDetailedMixinSpec.js
+badd +21 test/app/views/magnet/createEdit/tags/sortableTagsSpec.js
+badd +21 test/app/views/magnet/detailed/task/itemSpec.js
+badd +1 test/app/views/task/sortableTaskListSpec.js
+badd +21 js/app/views/magnet/detailed/task/item/footer.js
+badd +11 test/app/views/magnet/detailed/task/item/footerSpec.js
+badd +7 js/app/views/magnet/createEdit/travelTimeTransit.jst
+badd +12 js/app/views/magnet/createEdit/travelTimeEstimate.jst
+badd +56 js/app/views/magnet/createEdit/transitRoutes.js
+badd +116 test/app/views/magnet/createEdit/transitRoutesSpec.js
+badd +37 js/app/views/magnet/createEdit/transitRoutes.jst
+badd +26 ~/Downloads/magneto-font-3.2/style.css
+badd +1 tasks/development.js
+badd +1 vendor/uri.js/src/URITemplate.js
+badd +31 js/app/views/search/searchBellowHeaderLarge.js
+badd +854 vendor/uri.js/src/URI.js
+badd +1 vendor/uri.js/src/.URI.js.swp
+badd +1 js/app/utils/prototypeHelper.js
+badd +24 js/app/views/magnet/detailed/transit.jst
+badd +117 js/app/models/magnet/ttmTravelMixin.js
+badd +31 test/app/models/magnet/ttmTravelMixinSpec.js
+badd +1 js/app/collections/search/who.js
+badd +19 js/app/views/magnet/share/whoAutocomplete.js
+badd +74 js/app/views/magnet/createEdit/whoAutocomplete.js
+badd +1 js/app/views/common/datePicker.jst
+badd +17 js/app/views/common/datePickerMonth.jst
+badd +22 js/app/views/search/searchBellowBodyLarge.jst
+badd +34 js/app/views/search/searchBellow.js
+badd +64 test/app/views/magnet/createEdit/when/timeAutocompleteSpec.js
+badd +8 js/app/views/magnet/detailed/when.jst
+badd +40 js/app/views/magnet/createEdit/when/endTimeAutocomplete.js
+badd +1 js/app/views/magnet/createEdit/when/dueTimeAutocomplete.js
+badd +10 ~/Downloads/NavigationDrawer/AndroidManifest.xml
+badd +1 js/app/views/magnet/createEdit/where/whereAutocompleteItem.jst
+badd +20 js/app/views/magnet/detailed/who.jst
+badd +53 test/app/views/search/searchBellowSpec.js
+badd +89 test/app/models/magnet/attachmentSpec.js
+silent! argdel *
+edit js/app/views/calendar/header/large.js
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 32 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+32
+normal! 064l
+tabedit sass/_calendar.scss
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 815 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+815
+normal! 016l
+tabedit js/app/models/bindings/binding.js
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 88 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 180 + 134) / 269)
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 1 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+wincmd w
+" argglobal
+edit test/app/models/bindings/bindingSpec.js
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 1 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+wincmd w
+exe 'vert 1resize ' . ((&columns * 88 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 180 + 134) / 269)
+tabedit js/app/views/magnet/createEdit/whoAutocomplete.js
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 74 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+74
+normal! 033l
+wincmd w
+" argglobal
+edit js/app/views/magnet/createEdit/whoAutocomplete.js
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 74 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+74
+normal! 033l
+wincmd w
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+tabedit js/app/models/main/socket/magnetHandlers.js
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 28 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+28
+normal! 07l
+tabedit js/app/collections/bindings.js
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 88 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 180 + 134) / 269)
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 1 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+wincmd w
+" argglobal
+edit test/app/collections/bindingsSpec.js
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 1 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+wincmd w
+exe 'vert 1resize ' . ((&columns * 88 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 180 + 134) / 269)
+tabedit js/app/views/calendar/week/weekFooter.js
+set splitbelow splitright
+wincmd _ | wincmd |
+split
+1wincmd k
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe '1resize ' . ((&lines * 66 + 39) / 79)
+exe '2resize ' . ((&lines * 10 + 39) / 79)
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 202 - ((0 * winheight(0) + 33) / 66)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+202
+normal! 042l
+wincmd w
+" argglobal
+enew
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+wincmd w
+exe '1resize ' . ((&lines * 66 + 39) / 79)
+exe '2resize ' . ((&lines * 10 + 39) / 79)
+tabedit js/app/views/calendar/week/dayBound.js
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 53 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+53
+normal! 012l
+wincmd w
+" argglobal
+edit js/app/views/calendar/week/dayBound.js
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 53 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+53
+normal! 012l
+wincmd w
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+tabedit js/app/views/calendar/week/weekFooter.js
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 320 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+320
+normal! 027l
+tabedit js/app/views/magnet/createEdit/where/whereAutocompleteItem.jst
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 1 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+tabedit js/app/views/magnet/createEdit/where/whereAutocomplete.js
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 90 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 178 + 134) / 269)
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 109 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+109
+normal! 0
+wincmd w
+" argglobal
+edit js/app/views/common/autocomplete.js
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 342 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+342
+normal! 011l
+wincmd w
+exe 'vert 1resize ' . ((&columns * 90 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 178 + 134) / 269)
+tabedit js/app/views/magnet/createEdit/travelTime.js
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 82 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+82
+normal! 066l
+wincmd w
+" argglobal
+edit test/app/views/magnet/createEdit/travelTimeSpec.js
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 140 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+140
+normal! 08l
+wincmd w
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+tabedit js/app/models/magnet/whereMixin.js
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 32 - ((0 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+32
+normal! 010l
+tabedit js/app/views/magnet/createEdit/submit.js
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 166 - ((35 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+166
+normal! 035l
+wincmd w
+" argglobal
+edit js/app/models/magnet/attachment.js
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 81 - ((19 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+81
+normal! 011l
+wincmd w
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+tabedit js/app/views/magnet/createEdit/where/whereAutocomplete.js
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 62 - ((28 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+62
+normal! 031l
+wincmd w
+" argglobal
+edit js/app/views/magnet/createEdit/where/whereAutocomplete.js
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 70 - ((63 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+70
+normal! 05l
+wincmd w
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+tabedit js/app/models/magnet/whereMixin.js
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+" argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 69 - ((33 * winheight(0) + 38) / 77)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+69
+normal! 020l
+tabnext 16
+if exists('s:wipebuf')
+"   silent exe 'bwipe ' . s:wipebuf
+endif
+" unlet! s:wipebuf
+set winheight=1 winwidth=20 shortmess=filnxtToO
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if file_readable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &so = s:so_save | let &siso = s:siso_save
+
+" Support for special windows like quick-fix and plug-in windows.
+" Everything down here is generated by vim-session (not supported
+" by :mksession out of the box).
+
+tabnext 7
+2wincmd w
+let s:bufnr_save = bufnr("%")
+let s:cwd_save = getcwd()
+cwindow
+if !getbufvar(s:bufnr_save, '&modified')
+  let s:wipebuflines = getbufline(s:bufnr_save, 1, '$')
+  if len(s:wipebuflines) <= 1 && empty(get(s:wipebuflines, 0, ''))
+    silent execute 'bwipeout' s:bufnr_save
+  endif
+endif
+execute "cd" fnameescape(s:cwd_save)
+1resize 66|vert 1resize 269|2resize 10|vert 2resize 269|
+tabnext 16
+1wincmd w
+if exists('s:wipebuf')
+  if empty(bufname(s:wipebuf))
+if !getbufvar(s:wipebuf, '&modified')
+  let s:wipebuflines = getbufline(s:wipebuf, 1, '$')
+  if len(s:wipebuflines) <= 1 && empty(get(s:wipebuflines, 0, ''))
+    silent execute 'bwipeout' s:wipebuf
+  endif
+endif
+  endif
+endif
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: ft=vim ro nowrap smc=128

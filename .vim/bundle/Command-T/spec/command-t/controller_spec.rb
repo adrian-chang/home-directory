@@ -1,30 +1,8 @@
-# Copyright 2010-2011 Wincent Colaiuta. All rights reserved.
-#
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions are met:
-#
-# 1. Redistributions of source code must retain the above copyright notice,
-#    this list of conditions and the following disclaimer.
-# 2. Redistributions in binary form must reproduce the above copyright notice,
-#    this list of conditions and the following disclaimer in the documentation
-#    and/or other materials provided with the distribution.
-#
-# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE
-# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-# POSSIBILITY OF SUCH DAMAGE.
+# Copyright 2010-2014 Greg Hurrell. All rights reserved.
+# Licensed under the terms of the BSD 2-clause license.
 
 require 'spec_helper'
 require 'command-t/controller'
-
-module VIM; end
 
 describe CommandT::Controller do
   describe 'accept selection' do
@@ -38,8 +16,14 @@ describe CommandT::Controller do
       stub_vim '/working/directory'
     end
 
+    def set_string(name, value)
+      stub(::VIM).evaluate(%{exists("#{name}")}).returns(1)
+      stub(::VIM).evaluate(name).returns(value)
+    end
+
     it 'opens relative paths inside the working directory' do
       stub(::VIM).evaluate('a:arg').returns('')
+      set_string('g:CommandTTraverseSCM', 'pwd')
       controller.show_file_finder
       mock(::VIM).command('silent e path/to/selection')
       controller.accept_selection
@@ -67,7 +51,7 @@ describe CommandT::Controller do
   end
 
   def stub_finder(sorted_matches=[])
-    finder = Object.new
+    finder = CommandT::FileFinder.new
     stub(finder).path = anything
     stub(finder).sorted_matches_for(anything, anything).returns(sorted_matches)
     stub(CommandT::FileFinder).new.returns(finder)
@@ -76,7 +60,7 @@ describe CommandT::Controller do
   def stub_match_window(selection)
     match_window = Object.new
     stub(match_window).matches = anything
-    stub(match_window).close
+    stub(match_window).leave
     stub(match_window).selection.returns(selection)
     stub(CommandT::MatchWindow).new.returns(match_window)
   end
@@ -93,6 +77,9 @@ describe CommandT::Controller do
     stub($curbuf).number.returns('0')
     stub(::VIM).command(/noremap/)
     stub(::VIM).command('silent b 0')
+    stub(::VIM).command(/augroup/)
+    stub(::VIM).command('au!')
+    stub(::VIM).command(/autocmd/)
     stub(::VIM).evaluate(/exists\(.+\)/).returns('0')
     stub(::VIM).evaluate('getcwd()').returns(working_directory)
     stub(::VIM).evaluate('&buflisted').returns('1')
