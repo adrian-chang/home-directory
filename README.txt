@@ -15,37 +15,57 @@
 
 -- Software Install
 1. Install Dropbox
-2. Install Google Chrome
-3. Install Skype
-4. Install iTerm 2.0
+2. Install Copy
+3. Install RecordIt
+4. Install Google Chrome
+5. Install Firefox
+6. Install Skype
+7. Install iTerm 2.0
  - Terminal
    - Unlimited scroll-back 
  - Colors
-   - Use presents 
-     - Ocean Colorscheme / solarized high constrast from Github
+   - Use presets 
+     - Ocean Color scheme / solarized high contrast from Github
  - Window 
    - Slight Transparency
    - New Window
      - 250 Columns
      - 50 Rows
+     - Style 
+ - Keys
+   - System wide hotkey / zoom
  - General
+   - Use Lion-style fullscreen windows off
    - Command zsh
    - Fun Addons
      - https://github.com/robbyrussell/oh-my-zsh
-5. Install Hiss
-6. Install Xcode
- - Use app store or developer.apple.com/Downloads
- - Includes Dev tools (merge etc. /developer/utilites)
+8. Install Hiss
+9. Install Google Voice Plugin
+10. Install Evernote
+11. Install Tunnelblick VPN
+12. Install Sublime
+  - Install Command line patch of sublime
+13. Install Xcode
+ - Use app store
+ - Includes Dev tools (merge etc. /developer/utilites), should be included as part of XCode, command line tools also
  - Move FileMerge to Dock
-7. Install Homebrew
+14. Install Homebrew
 8. Install Macvim
  - Use brew
  - Symbolic link app to /applications
  - http://clearfix.be/2012/08/05/fix-mountain-lion-10-8-python-ioerror-pyconfig-h-error/
-9. Install Google Voice Plugin
-10. Install Evernote
-11. Install Tunnelblick VPN
-12. Install Adium
+
+-- Java
+1. Install from Oracle
+
+-- WGet
+1. brew install wget
+
+-- HTTPie
+1. brew install httpie
+
+-- htop
+1. brew install htop
 
 -- Checkout Home Directory from Github
 1. Use git init, then git remote add origin
@@ -55,27 +75,12 @@
 2. Need to select merge / difftool
 3. Setup SSH keys on new machine
 
--- WGet
-1. brew install wget
-
--- XCode
-1. Preferences
-  - Downloads
-    - Command Line Tools
-
--- htop
-1. brew install htop
-
 -- Ngnix
 1. Install Ngnix using brew
   - Config file: /usr/local/etc
 
 -- Hosts
 1. /etc/hosts .....
-
--- Java
-1. https://developer.apple.com/downloads/index.action
- - Install Java OSX developer tools
 
 -- Node
 1. Install Node Version Manager
