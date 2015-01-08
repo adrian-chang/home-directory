@@ -36,24 +36,23 @@
    - System wide hotkey / zoom
  - General
    - Use Lion-style fullscreen windows off
-   - Command zsh
-   - Fun Addons
-     - https://github.com/robbyrussell/oh-my-zsh
 8. Install Hiss
 9. Install Google Voice Plugin
 10. Install Evernote
 11. Install Tunnelblick VPN
 12. Install Sublime
-  - Install Command line patch of sublime
 13. Install Xcode
  - Use app store
  - Includes Dev tools (merge etc. /developer/utilites), should be included as part of XCode, command line tools also
+   - https://developer.apple.com/downloads/index.action?name=for%20Xcode%20-#
  - Move FileMerge to Dock
 14. Install Homebrew
-8. Install Macvim
- - Use brew
- - Symbolic link app to /applications
- - http://clearfix.be/2012/08/05/fix-mountain-lion-10-8-python-ioerror-pyconfig-h-error/
+
+-- ZSH
+1. brew install zsh 
+2. https://github.com/robbyrussell/oh-my-zsh
+3. ys theme
+4. plugins=(git brew bundler bower gem git-extras gradle jsontools last-working-dir mvn node npm osx pyenv python rails ruby rvm sublime web-search)
 
 -- Java
 1. Install from Oracle
@@ -67,13 +66,45 @@
 -- htop
 1. brew install htop
 
--- Checkout Home Directory from Github
-1. Use git init, then git remote add origin
-
 -- Git Setup Notes
 1. Need to fill out hidden fields
 2. Need to select merge / difftool
 3. Setup SSH keys on new machine
+
+-- Checkout Home Directory from Github
+1. Use git init, then git remote add origin
+
+-- Ruby
+1. Install rbenv (version first in zshrc, also make sure openssl with brew is installed)
+ - https://github.com/sstephenson/rbenv
+ - brew install ruby-build
+2. rbenv install 2.2.0
+3. rbenv global 2.2.0
+4. rbenv bundler
+ - https://github.com/carsomyr/rbenv-bundler
+5. Ruby load path (1.9.2) dosen't scan current dir
+6. Ruby 1.9, gems are loaded by default, no require rubygems to get single path gems
+7. https://github.com/sstephenson/rbenv-gem-rehash
+
+-- Node
+1. Install Node Version Manager
+ - https://github.com/creationix/nvm 
+ - Source nvm to shell
+2. nvm install v0.10.35
+3. nvm use v0.10.35
+4. nvm alias default v0.10.35
+5. npm install -g node-inspector
+6. npm install -g jshint
+7. add the path correctly first for ~/.nvm
+
+-- Python
+1. Python version management
+ - https://github.com/yyuu/pyenv#homebrew-on-mac-os-x
+ - https://github.com/yyuu/pyenv-installer
+ - https://github.com/yyuu/pyenv-virtualenv
+ - https://github.com/yyuu/pyenv-pip-rehash
+2. sudo easy_install pip
+3. pip install flake8 (checker)
 
 -- Ngnix
 1. Install Ngnix using brew
@@ -81,37 +112,6 @@
 
 -- Hosts
 1. /etc/hosts .....
-
--- Node
-1. Install Node Version Manager
- - https://github.com/creationix/nvm 
- - Source nvm to shell
-2. nvm install v0.6.6
-3. nvm use v0.6.6
-4. npm install -g node-inspector
-5. npm install -g jshint
-6. nvm alias default 0.6.6
-
--- Ruby
-1. Install rbenv
- - https://github.com/sstephenson/rbenv
-2. rbenv install 1.9.3-p392
-3. rbenv global 1.9.3-p392
-4. rbenv gemset
- - https://github.com/jamis/rbenv-gemset
-5. Create gemset
-6. Update gemset 
- - rvm [target] do gem update or gem update
-7. Ruby load path (1.9.2) dosen't scan current dir
-8. Ruby 1.9, gems are loaded by default, no require rubygems to get single path gems
-9. rubygems-bundler to avoid bundle exec 
-
--- Python
-1. Python version management
- - https://github.com/utahta/pythonbrew
-2. pythonbrew switch 3.x
-3. sudo easy_install pip
-4. pip install flake8 (checker)
 
 -- Vim Setup Notes
 1. To fix (gksudo:5045): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap"
@@ -132,6 +132,7 @@
 10. Rdb for Rails 3, :let g:ruby_debugger_default_script = 'script/rails server' (:Redebugger default)  
 11. Rdb (IMPORTANT FOR OS X) let g:ruby_debugger_progname = 'mvim'
 12. Rdb :RdbLog, :RdbEval, :RdbCond, :RdbStop
+13. *** install using vundle now ***
 
 -- Development Enviroment Cleanup
 

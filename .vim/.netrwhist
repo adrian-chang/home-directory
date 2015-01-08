@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/adrian/Development/projects/Gogobot-Rails3/www_rails'
-let g:netrw_dirhist_2='/Library/LaunchAgents'
-let g:netrw_dirhist_3='/Users/adrian/Development/projects/GogoDroid/.git/modules/3rdparty/HoloEverywhere'
-let g:netrw_dirhist_4='/Users/amchang/Library/Application Support/Google/Chrome Canary/Default/Extensions'
-let g:netrw_dirhist_5='/Users/amchang/.rbenv'
-let g:netrw_dirhist_6='/Users/amchang/.vim'
