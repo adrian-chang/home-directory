@@ -85,6 +85,7 @@
 5. Ruby load path (1.9.2) dosen't scan current dir
 6. Ruby 1.9, gems are loaded by default, no require rubygems to get single path gems
 7. https://github.com/sstephenson/rbenv-gem-rehash
+8. pry tool (gem install pry)
 
 -- Node
 1. Install Node Version Manager
