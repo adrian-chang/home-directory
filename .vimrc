@@ -168,6 +168,7 @@ nnoremap <Leader>= :vertical resize +5<cr>
 
 " vim sessions
 let g:session_extension = '.bak' " .bak extensions for sessions
+let g:session_autosave = 1       " save automatically
 let g:session_autosave_periodic = 5 " 5 minutes autosave sessions
 
 " plugin keymappings
