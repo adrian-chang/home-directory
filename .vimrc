@@ -58,7 +58,7 @@ au VimEnter * :colorscheme desert " .vim/colors
 " CtrlP 
 set wildignore+=vendor/**,node_modules/**,.*/**
 " https://github.com/kien/ctrlp.vim/issues/58
-let g:ctrlp_custom_ignore = '\v[\/](vendor|node_modules|target|dist)|(\.(swp|ico|git|svn|DS_Store))$'
+let g:ctrlp_custom_ignore = '\v[\/](vendor|node_modules|target|dist|build)|(\.(swp|ico|git|svn|DS_Store))$'
 nnoremap <silent> <Leader>[ :CtrlPMixed<CR>
 nnoremap <silent> <Leader>` :CtrlPClearCache<CR>
 
