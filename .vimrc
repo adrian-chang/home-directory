@@ -29,6 +29,9 @@ Plugin 'kien/ctrlp.vim'
 " neocomplcache.vim
 Plugin 'shougo/vimshell.vim'
 Plugin 'shougo/neocomplcache.vim'
+" jsbeautify
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'einars/js-beautify'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
