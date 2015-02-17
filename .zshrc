@@ -94,3 +94,27 @@ source $(brew --prefix nvm)/nvm.sh
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
+# Cairo / Canvas
+export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
+
+# Docker
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/achang/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+
+# Kill all running containers.
+alias dockerkillall='docker kill $(docker ps -q)'
+
+# Delete all stopped containers.
+alias dockercleanc='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
+
+# Delete all untagged images.
+alias dockercleani='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
+
+# Delete all stopped containers and untagged images.
+alias dockerclean='dockercleanc || true && dockercleani'
+
+# arc
+export PATH=$PATH:/Users/achang/Development/Software/arcanist/bin
+
