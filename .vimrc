@@ -59,9 +59,9 @@ syntax on " highlight syntax
 au VimEnter * :colorscheme desert " .vim/colors
 
 " CtrlP 
-set wildignore+=vendor/**,node_modules/**,.*/**
+set wildignore+=vendor/**,node_modules/**,.*/**,coverage/**,dist/**
 " https://github.com/kien/ctrlp.vim/issues/58
-let g:ctrlp_custom_ignore = '\v[\/](vendor|node_modules|target|dist|build)|(\.(swp|ico|git|svn|DS_Store))$'
+let g:ctrlp_custom_ignore = '\v[\/](vendor|node_modules|target|dist|build|coverage)|(\.(swp|ico|git|svn|DS_Store))$'
 nnoremap <silent> <Leader>[ :CtrlPMixed<CR>
 nnoremap <silent> <Leader>` :CtrlPClearCache<CR>
 
@@ -77,6 +77,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " syntastic
 au VimEnter * :let g:syntastic_auto_loc_list=1 " let the error list popup when needed and used
 au VimEnter * :let g:syntastic_loc_list_height=5 " error list cap at 5
+let g:syntastic_javascript_checkers = ['eslint']
 
 " neocomplcache.vim
 " Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
@@ -171,7 +172,8 @@ nnoremap <Leader>= :vertical resize +5<cr>
 
 " vim sessions
 let g:session_extension = '.bak' " .bak extensions for sessions
-let g:session_autosave = 1       " save automatically
+let g:session_autoload = 'yes'
+let g:session_autosave = 'yes'       " save automatically
 let g:session_autosave_periodic = 5 " 5 minutes autosave sessions
 
 " plugin keymappings
@@ -180,3 +182,6 @@ let g:session_autosave_periodic = 5 " 5 minutes autosave sessions
 
 " Vim Airline
 set laststatus=2                             " always show statusbar  
+
+" no swap
+set noswapfile

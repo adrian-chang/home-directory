@@ -134,6 +134,7 @@
 11. Rdb (IMPORTANT FOR OS X) let g:ruby_debugger_progname = 'mvim'
 12. Rdb :RdbLog, :RdbEval, :RdbCond, :RdbStop
 13. *** install using vundle now ***
+14. Install Syntax Checkers - https://github.com/jaxbot/syntastic-react
 
 -- Development Enviroment Cleanup
 
