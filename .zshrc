@@ -49,7 +49,7 @@ plugins=(git brew bundler git-extras jsontools last-working-dir node npm osx pye
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/var/rbenv/versions/2.2.0/bin/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -115,6 +115,34 @@ alias dockercleani='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(
 # Delete all stopped containers and untagged images.
 alias dockerclean='dockercleanc || true && dockercleani'
 
-# arc
-export PATH=$PATH:/Users/achang/Development/Software/arcanist/bin
+# Start Docker
+alias dockerstart='boot2docker init; boot2docker start; $(boot2docker shellinit)'
 
+# arc
+export PATH=$PATH:/Users/achang/Development/Software/arcanist/bin:~/scripts
+
+# vim clean
+alias cleanvim='find ./ -type f -name "\.*sw[klmnop]" -delete'
+
+# GoDaddy
+export NPM_CONFIG="~/.npmrc-gd"
+
+# GoDaddy NPM
+alias gd-unpublish="npm unpublish --userconfig=~/.npmrc-gd"
+alias gd-view="npm view --userconfig=~/.npmrc-gd"
+
+alias cd-mm="cd ~/Development/node-madmimi-adapter"
+alias cd-apps="cd ~/Development/node-wsb-apps-api"
+alias edit-zsh="subl ~/.zshrc"
+
+# keybinds
+bindkey ^F forward-word
+bindkey ^B backward-word
+bindkey ^D kill-word
+
+[[ -s "/Users/achang/.gvm/scripts/gvm" ]] && source "/Users/achang/.gvm/scripts/gvm"
+
+# python specific
+export WORKON_HOME=$HOME/.virtual_envs
+export PROJECT_HOME=$HOME/.virtual_env_projects
+source /usr/local/bin/virtualenvwrapper.sh
