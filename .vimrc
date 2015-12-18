@@ -32,6 +32,12 @@ Plugin 'shougo/neocomplcache.vim'
 " jsbeautify
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'einars/js-beautify'
+" vim-better-whitespace
+Plugin 'ntpeters/vim-better-whitespace'
+" vim-git-gutter
+Plugin 'airblade/vim-gitgutter'
+" vim indent-guids
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,7 +64,7 @@ set guioptions-=T " don't show gui bar
 syntax on " highlight syntax
 au VimEnter * :colorscheme desert " .vim/colors
 
-" CtrlP 
+" CtrlP
 set wildignore+=vendor/**,node_modules/**,.*/**,coverage/**,dist/**
 " https://github.com/kien/ctrlp.vim/issues/58
 let g:ctrlp_custom_ignore = '\v[\/](vendor|node_modules|target|dist|build|coverage)|(\.(swp|ico|git|svn|DS_Store))$'
@@ -76,8 +82,12 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " syntastic
 au VimEnter * :let g:syntastic_auto_loc_list=1 " let the error list popup when needed and used
+au VimEnter * :let g:syntastic_check_on_wq=0 " error list doesn't show on write
 au VimEnter * :let g:syntastic_loc_list_height=5 " error list cap at 5
+au VimEnter * :let g:syntastic_mode_map = { 'mode': 'passive' }
 let g:syntastic_javascript_checkers = ['eslint']
+nnoremap <silent> <Leader>' :SyntasticReset<CR>
+nnoremap <silent> <Leader>; :SyntasticCheck<CR>
 
 " neocomplcache.vim
 " Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
@@ -160,7 +170,7 @@ let g:neocomplcache_force_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\
 " https://github.com/c9s/perlomni.vim
 let g:neocomplcache_force_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
-" tagbar 
+" tagbar
 let g:tagbar_width=25 " set the tagbar width to 25 characters
 " au VimEnter * nested :TagbarOpen " open tagbar on every nested window switch
 
@@ -181,7 +191,13 @@ let g:session_autosave_periodic = 5 " 5 minutes autosave sessions
 " per file type specific commands
 
 " Vim Airline
-set laststatus=2                             " always show statusbar  
+set laststatus=2                             " always show statusbar
 
 " no swap
 set noswapfile
+
+" better white space
+autocmd VimEnter * highlight ExtraWhitespace ctermbg=red
+
+autocmd VimEnter * CurrentLineWhitespaceOn
+autocmd BufWritePre * StripWhitespace
