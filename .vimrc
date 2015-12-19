@@ -127,6 +127,7 @@ let g:indentLine_leadingSpaceChar = '.'
 nnoremap <Leader>' :tabn<cr>
 nnoremap <Leader>; :tabp<cr>
 nnoremap <Leader>l :tabedit<cr>
+au VimEnter * :hi TablineFill ctermfg=black
 
 " autocomplete
 let g:ycm_autoclose_preview_window_after_completion = 1
