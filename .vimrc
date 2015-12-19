@@ -27,6 +27,16 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 " indent
 Plugin 'Yggdroot/indentLine'
+" colors
+Plugin 'flazz/vim-colorschemes'
+" fugitive.vim
+Plugin 'tpope/vim-fugitive'
+" numbers.vim
+Plugin 'myusuf3/numbers.vim'
+" tern_for_vim (autocomplete JS), requires extra install
+Plugin 'ternjs/tern_for_vim'
+" copy paste
+Plugin 'NLKNguyen/copy-cut-paste.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,7 +62,7 @@ set guioptions-=T " don't show gui bar
 
 " colorscheme
 syntax on " highlight syntax
-au VimEnter * :colorscheme desert " .vim/colors
+au VimEnter * :colorscheme nightsky " .vim/colors
 
 " CtrlP
 set wildignore+=vendor/**,node_modules/**,.*/**,coverage/**,dist/**
@@ -107,6 +117,19 @@ set noswapfile
 
 " spaces
 let g:indentLine_color_term = 226
-let g:indentLine_char ='┊'
+let g:indentLine_char ='|'
 let g:indentLine_color_tty_light = 0
 let g:indentLine_color_tty_dark = 0 
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '.'
+
+" tab
+nnoremap <Leader>' :tabn<cr>
+nnoremap <Leader>; :tabp<cr>
+nnoremap <Leader>l :tabedit<cr>
+
+" autocomplete
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1
+set completeopt-=prev
