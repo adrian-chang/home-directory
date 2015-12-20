@@ -40,9 +40,7 @@ Plugin 'NLKNguyen/copy-cut-paste.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-" filetype plugin on
+filetype plugin on           " required
 
 "  Put your non-Plugin stuff after this line
 set number
@@ -52,10 +50,11 @@ set hidden
 set autoindent
 set ignorecase
 set path=./**
+set backspace=indent,eol,start
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set backspace=indent,eol,start
+set softtabstop=2
 
 " Macvim / GUI Vim
 set guioptions-=T " don't show gui bar
