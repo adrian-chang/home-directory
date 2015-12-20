@@ -1,9 +1,0 @@
-#require 'autotest/growl'
-require 'autotest/fsevent'
-
-# hook for integration tests
-Autotest.add_hook :initialize do |at|
- 	 at.add_mapping(%r%^spec/(integration)/.*rb$%) do |filename, _|
-    	filename
- 	end 
-end
