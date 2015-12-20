@@ -41,6 +41,8 @@ Plugin 'NLKNguyen/copy-cut-paste.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin on           " required
+set autoindent
+set nocindent
 
 "  Put your non-Plugin stuff after this line
 set number
@@ -51,10 +53,7 @@ set autoindent
 set ignorecase
 set path=./**
 set backspace=indent,eol,start
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set softtabstop=2
+au Filetype * set tabstop=2|set shiftwidth=2|set expandtab|set softtabstop=2
 
 " Macvim / GUI Vim
 set guioptions-=T " don't show gui bar
