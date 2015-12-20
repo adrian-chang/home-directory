@@ -128,6 +128,11 @@ nnoremap <Leader>' :tabn<cr>
 nnoremap <Leader>; :tabp<cr>
 nnoremap <Leader>l :tabedit<cr>
 au VimEnter * :hi TablineFill ctermfg=black
+au VimEnter * :set tabstop=2
+au VimEnter * :set shiftwidth=2
+au VimEnter * :set softtabstop=2
+au VimEnter * :set smarttab
+au VimEnter * :set expandtab
 
 " autocomplete
 let g:ycm_autoclose_preview_window_after_completion = 1
