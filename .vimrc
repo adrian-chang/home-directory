@@ -39,6 +39,8 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'NLKNguyen/copy-cut-paste.vim'
 " whitespace
 Plugin 'ntpeters/vim-better-whitespace'
+" window
+Plugin 'justincampbell/vim-eighties'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
