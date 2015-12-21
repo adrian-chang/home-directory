@@ -37,6 +37,8 @@ Plugin 'myusuf3/numbers.vim'
 Plugin 'ternjs/tern_for_vim'
 " copy paste
 Plugin 'NLKNguyen/copy-cut-paste.vim'
+" whitespace
+Plugin 'ntpeters/vim-better-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -134,8 +136,5 @@ let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
 set completeopt-=prev
 
-" Whitespace
-function TrimWhiteSpace()
-  %s/\s*$//
-  ''
-:endfunction
+" whitespace
+let g:better_whitespace_enabled = 0
