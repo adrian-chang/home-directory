@@ -20,7 +20,7 @@ Plugin 'majutsushi/tagbar'
 " ag
 Plugin 'rking/ag.vim'
 " CtrlP
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " YouCompleteMe (install)
 Plugin 'Valloric/YouCompleteMe'
 " vim-git-gutter
@@ -66,6 +66,7 @@ au VimEnter * :colorscheme nightsky " .vim/colors
 set wildignore+=vendor/**,node_modules/**,.*/**,coverage/**,dist/**
 " https://github.com/kien/ctrlp.vim/issues/58
 let g:ctrlp_custom_ignore = '\v[\/](vendor|node_modules|target|dist|build|coverage)|(\.(swp|ico|git|svn|DS_Store))$'
+let g:ctrlp_switch_buffer = 0
 nnoremap <silent> <Leader>[ :CtrlPMixed<CR>
 nnoremap <silent> <Leader>` :CtrlPClearCache<CR>
 
