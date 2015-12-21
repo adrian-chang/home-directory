@@ -140,3 +140,6 @@ set completeopt-=prev
 
 " whitespace
 let g:better_whitespace_enabled = 0
+
+" eighties
+let g:eighties_compute = 1
