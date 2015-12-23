@@ -71,7 +71,7 @@ set wildignore+=vendor/**,node_modules/**,.*/**,coverage/**,dist/**
 " https://github.com/kien/ctrlp.vim/issues/58
 let g:ctrlp_custom_ignore = '\v[\/](vendor|node_modules|target|dist|build|coverage)|(\.(swp|ico|git|svn|DS_Store))$'
 let g:ctrlp_switch_buffer = 0
-nnoremap <silent> <Leader>[ :CtrlPMixed<CR>
+nnoremap <silent> <Leader>[ :CtrlP<CR>
 nnoremap <silent> <Leader>` :CtrlPClearCache<CR>
 
 " nerdtree
