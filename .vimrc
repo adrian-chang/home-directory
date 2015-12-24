@@ -72,7 +72,7 @@ set wildignore+=vendor/**,node_modules/**,.*/**,coverage/**,dist/**
 let g:ctrlp_custom_ignore = '\v[\/](vendor|node_modules|target|dist|build|coverage)|(\.(swp|ico|git|svn|DS_Store))$'
 let g:ctrlp_switch_buffer = 0
 nnoremap <silent> <Leader>[ :CtrlP<CR>
-nnoremap <silent> <Leader>` :CtrlPClearCache<CR>
+nnoremap <silent> <Leader>` :CtrlPClearAllCaches<CR>
 
 " nerdtree
 let g:NERDTreeShowHidden=1 " show hidden files
