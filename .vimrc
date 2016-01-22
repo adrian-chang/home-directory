@@ -41,6 +41,9 @@ Plugin 'NLKNguyen/copy-cut-paste.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 " window
 Plugin 'justincampbell/vim-eighties'
+" sessions
+Plugin 'tpope/vim-obsession'
+Plugin 'dhruvasagar/vim-prosession'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
