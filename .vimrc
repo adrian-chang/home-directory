@@ -43,7 +43,6 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'justincampbell/vim-eighties'
 " sessions
 Plugin 'tpope/vim-obsession'
-Plugin 'dhruvasagar/vim-prosession'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -84,7 +83,7 @@ let g:NERDTreeShowBookmarks=1 " show the bookmarks stored
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" au GUIEnter * :NERDTree " open NERDTree:
+autocmd VimEnter * :NERDTree " open NERDTree:
 
 " syntastic
 au VimEnter * :let g:syntastic_auto_loc_list=1 " let the error list popup when needed and used
