@@ -118,22 +118,8 @@ alias dockerclean='dockercleanc || true && dockercleani'
 # Start Docker
 alias dockerstart='boot2docker init; boot2docker start; $(boot2docker shellinit)'
 
-# arc
-export PATH=$PATH:/Users/achang/Development/Software/arcanist/bin:~/scripts
-
 # vim clean
 alias cleanvim='find ./ -type f -name "\.*sw[klmnop]" -delete'
-
-# GoDaddy
-export NPM_CONFIG="~/.npmrc-gd"
-
-# GoDaddy NPM
-alias gd-unpublish="npm unpublish --userconfig=~/.npmrc-gd"
-alias gd-view="npm view --userconfig=~/.npmrc-gd"
-
-alias cd-mm="cd ~/Development/node-madmimi-adapter"
-alias cd-apps="cd ~/Development/node-wsb-apps-api"
-alias edit-zsh="subl ~/.zshrc"
 
 # keybinds
 bindkey ^F forward-word
@@ -142,7 +128,8 @@ bindkey ^D kill-word
 
 [[ -s "/Users/achang/.gvm/scripts/gvm" ]] && source "/Users/achang/.gvm/scripts/gvm"
 
-# python specific
-export WORKON_HOME=$HOME/.virtual_envs
-export PROJECT_HOME=$HOME/.virtual_env_projects
-source /usr/local/bin/virtualenvwrapper.sh
+# python
+export PATH=~/miniconda3/bin:"$PATH"
+
+# tex
+export PATH=$PATH:/usr/local/texlive/2015basic/bin/x86_64-darwin

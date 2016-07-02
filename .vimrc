@@ -34,7 +34,7 @@ Plugin 'tpope/vim-fugitive'
 " numbers.vim
 Plugin 'myusuf3/numbers.vim'
 " tern_for_vim (autocomplete JS), requires extra install
-Plugin 'ternjs/tern_for_vim'
+" Plugin 'ternjs/tern_for_vim'
 " copy paste
 Plugin 'NLKNguyen/copy-cut-paste.vim'
 " whitespace
@@ -43,6 +43,10 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'justincampbell/vim-eighties'
 " sessions
 Plugin 'tpope/vim-obsession'
+" tern
+Plugin 'marijnh/tern_for_vim'
+" tex
+Plugin 'vim-latex/vim-latex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
