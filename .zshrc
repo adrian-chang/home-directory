@@ -45,11 +45,11 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew bundler git-extras jsontools last-working-dir node npm osx pyenv python ruby sublime web-search)
+plugins=(git brew bundler git-extras jsontools last-working-dir osx)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/var/rbenv/versions/2.2.0/bin/"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -82,8 +82,8 @@ source $ZSH/oh-my-zsh.sh
 # Personal Config
 
 # RBenv
-export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# export RBENV_ROOT=/usr/local/var/rbenv
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # NVM
 export NVM_DIR=~/.nvm
@@ -91,17 +91,16 @@ source $(brew --prefix nvm)/nvm.sh
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
 # PYEnv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# not base 64!
+# export CI_PULL_PASSWORD=ULrKBez7AH9pnaF6
+export PIPENV_PASSWORD=AP4XVKDfYFvfQPoaRTYDF5Nc1g1mAHHq5mQU8k
+export PIPENV_USER=ci_pull
 
 # Cairo / Canvas
 export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
-
-# Docker
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/achang/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
 
 # Kill all running containers.
 alias dockerkillall='docker kill $(docker ps -q)'
@@ -115,9 +114,6 @@ alias dockercleani='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(
 # Delete all stopped containers and untagged images.
 alias dockerclean='dockercleanc || true && dockercleani'
 
-# Start Docker
-alias dockerstart='boot2docker init; boot2docker start; $(boot2docker shellinit)'
-
 # vim clean
 alias cleanvim='find ./ -type f -name "\.*sw[klmnop]" -delete'
 
@@ -126,10 +122,23 @@ bindkey ^F forward-word
 bindkey ^B backward-word
 bindkey ^D kill-word
 
-[[ -s "/Users/achang/.gvm/scripts/gvm" ]] && source "/Users/achang/.gvm/scripts/gvm"
+# [[ -s "/Users/achang/.gvm/scripts/gvm" ]] && source "/Users/achang/.gvm/scripts/gvm"
 
-# python
-export PATH=~/miniconda3/bin:"$PATH"
+# history
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000
 
 # tex
-export PATH=$PATH:/usr/local/texlive/2015basic/bin/x86_64-darwin
+export PATH=$PATH:/usr/local/texlive/2016basic/bin/x86_64-darwin
+
+# development / GT
+alias gtech='cd ~/Google-Drive/School/GT'
+alias develop='cd ~/Development'
+
+# nvim
+export PATH=$PATH:~/Development/Software/nvim-osx64/bin
+
+# Poetry
+export PATH=~/.poetry/bin:$PATH
+# temporary!
+alias poetry-activate="source $(poetry env info -p)/bin/activate"

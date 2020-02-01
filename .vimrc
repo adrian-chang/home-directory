@@ -21,10 +21,11 @@ Plugin 'majutsushi/tagbar'
 Plugin 'rking/ag.vim'
 " CtrlP
 Plugin 'kien/ctrlp.vim'
-" YouCompleteMe (install)
-Plugin 'Valloric/YouCompleteMe'
+" autocomplete
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'zchee/deoplete-jedi'
 " vim-git-gutter
-Plugin 'airblade/vim-gitgutter'
+" Plugin 'airblade/vim-gitgutter'
 " indent
 Plugin 'Yggdroot/indentLine'
 " colors
@@ -32,7 +33,7 @@ Plugin 'flazz/vim-colorschemes'
 " fugitive.vim
 Plugin 'tpope/vim-fugitive'
 " numbers.vim
-Plugin 'myusuf3/numbers.vim'
+" Plugin 'myusuf3/numbers.vim'
 " tern_for_vim (autocomplete JS), requires extra install
 " Plugin 'ternjs/tern_for_vim'
 " copy paste
@@ -42,11 +43,13 @@ Plugin 'ntpeters/vim-better-whitespace'
 " window
 Plugin 'justincampbell/vim-eighties'
 " sessions
-Plugin 'tpope/vim-obsession'
+" Plugin 'tpope/vim-obsession'
 " tern
 Plugin 'marijnh/tern_for_vim'
 " tex
-Plugin 'vim-latex/vim-latex'
+" Plugin 'lervag/vimtex'
+" R
+" Plugin 'jalvesaq/nvim-r'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -73,7 +76,7 @@ syntax on " highlight syntax
 au VimEnter * :colorscheme nightsky " .vim/colors
 
 " CtrlP
-set wildignore+=vendor/**,node_modules/**,.*/**,coverage/**,dist/**
+set wildignore+=vendor/**,node_modules/**,.*/**,coverage/**,dist/**,lib/**
 " https://github.com/kien/ctrlp.vim/issues/58
 let g:ctrlp_custom_ignore = '\v[\/](vendor|node_modules|target|dist|build|coverage)|(\.(swp|ico|git|svn|DS_Store))$'
 let g:ctrlp_switch_buffer = 0
@@ -125,27 +128,56 @@ set laststatus=2                             " always show statusbar
 set noswapfile
 
 " spaces
+let g:indentLine_faster=1
 let g:indentLine_color_term = 226
 let g:indentLine_char ='|'
 let g:indentLine_color_tty_light = 0
 let g:indentLine_color_tty_dark = 0 
-let g:indentLine_leadingSpaceEnabled = 1
+" let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '.'
 
 " tab
 nnoremap <Leader>' :tabn<cr>
-nnoremap <Leader>; :tabp<cr>
-nnoremap <Leader>l :tabedit<cr>
+nnoremap <Leader>/ :tabp<cr>
+nnoremap <Leader><ENTER> :tabedit<cr>
 au VimEnter * :hi TablineFill ctermfg=black
 
 " autocomplete
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_autoclose_preview_window_after_insertion = 1
-set completeopt-=prev
+let g:deoplete#enable_at_startup = 1
 
 " whitespace
-let g:better_whitespace_enabled = 0
+" let g:better_whitespace_enabled = 0
 
 " eighties
 let g:eighties_compute = 1
+
+" tex
+au VimEnter *.tex :VimtexCompile
+let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+let g:vimtex_view_general_options = '-r @line @pdf @tex'
+let g:vimtex_latexmk_continuous = 0
+let g:vimtex_latexmk_background = 1
+if !exists('g:ycm_semantic_triggers')
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers.tex = [
+      \ 're!\\[A-Za-z]*cite[A-Za-z]*(\[[^]]*\]){0,2}{[^}]*',
+      \ 're!\\[A-Za-z]*ref({[^}]*|range{([^,{}]*(}{)?))',
+      \ 're!\\hyperref\[[^]]*',
+      \ 're!\\includegraphics\*?(\[[^]]*\]){0,2}{[^}]*',
+      \ 're!\\(include(only)?|input){[^}]*',
+      \ 're!\\\a*(gls|Gls|GLS)(pl)?\a*(\s*\[[^]]*\]){0,2}\s*\{[^}]*',
+      \ 're!\\includepdf(\s*\[[^]]*\])?\s*\{[^}]*',
+      \ 're!\\includestandalone(\s*\[[^]]*\])?\s*\{[^}]*',
+      \ ]
+
+" R
+autocmd FileType r if string(g:SendCmdToR) == "function('SendCmdToR_fake')" | call StartR("R") | endif
+autocmd FileType rmd if string(g:SendCmdToR) == "function('SendCmdToR_fake')" | call StartR("R") | endif
+autocmd VimLeave * if exists("g:SendCmdToR") && string(g:SendCmdToR) != "function('SendCmdToR_fake')" | call RQuit("nosave") | endif
+vmap <Space> <Plug>RDSendSelection
+nmap <Space> <Plug>RDSendLine
+
+" conda
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+set expandtab
