@@ -51,6 +51,10 @@
 12. asdf global golang 1.20.3
 
 -- nvim
+1. mkdir ~/.config/nvim
+2. cp ./nvim/*  ~/.config/nvim
+3. Install vim-plug
+4. :PlugInstall
 
 -- Hosts
 1. /etc/hosts .....

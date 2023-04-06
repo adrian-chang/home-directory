@@ -18,6 +18,9 @@ set softtabstop=2
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
 
+" yank copy
+set clipboard+=unnamedplus
+
 " vim-deus
 set t_Co=256
 set termguicolors
