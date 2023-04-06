@@ -50,16 +50,7 @@
 11. asdf install golang 1.20.3
 12. asdf global golang 1.20.3
 
--- NVIM
-
--- Git Setup Notes
-1. Need to fill out hidden fields
-2. Need to select merge / difftool
-3. Setup SSH keys on new machine
-
--- Checkout Home Directory from Github
-1. Use git init, then git remote add origin
-
+-- nvim
 
 -- Hosts
 1. /etc/hosts .....
