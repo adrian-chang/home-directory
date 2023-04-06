@@ -2,69 +2,33 @@
 
 -- Initial Startup
 1. Register product to existing Apple ID
-2. Customize Finder
- - Preferences
-   - Show more devices or locations as needed in the Finder or desktop
-   - Show filename extensions
- - View
-   - Show Path and Status (space)
-3. Customize Dock
-4. Customize GMail
- - Turn on lab features
- - Set theme
 
 -- Software Install
-1. Install Dropbox
-2. Install Copy
-3. Install RecordIt
-4. Install Google Chrome
-5. Install Firefox
-6. Install Skype
-7. Install iTerm 2.0
- - Terminal
-   - Unlimited scroll-back 
- - Colors
-   - Use presets 
-     - Ocean Color scheme / solarized high contrast from Github
- - Window 
-   - Slight Transparency
-   - New Window
-     - 250 Columns
-     - 50 Rows
-     - Style 
- - Keys
-   - System wide hotkey / zoom
- - General
-   - Use Lion-style fullscreen windows off
-8. Install Hiss
-9. Install Google Voice Plugin
-10. Install Evernote
-11. Install Tunnelblick VPN
-12. Install Sublime
-13. Install Xcode
+1. Install pCloud
+2. Install Brave
+3. Install Divvy
+4. Install Notion
+5. Install Xcode
  - Use app store
  - Includes Dev tools (merge etc. /developer/utilites), should be included as part of XCode, command line tools also
    - https://developer.apple.com/downloads/index.action?name=for%20Xcode%20-#
- - Move FileMerge to Dock
-14. Install Homebrew
+6. Install Homebrew
+7. Install iTerm 2.0
+  - https://shyr.io/blog/iterm2-beautiful-customizations
+  - SourceCodePro + Powerline + Awesome Font
+  - Solarized Dark High Contrast
+  - Slight Transparency
+8. Add access keys to Github
 
--- ZSH
-1. brew install zsh 
-2. https://github.com/robbyrussell/oh-my-zsh
-3. ys theme
-4. plugins=(git brew bundler bower gem git-extras gradle jsontools last-working-dir mvn node npm osx pyenv python rails ruby rvm sublime web-search)
+-- Fish
+1. brew install wget
+1. brew install httpie
+1. brew install htop
 
 -- Java
+
+
 1. Install from Oracle
-
--- WGet
-1. brew install wget
-
--- HTTPie
-1. brew install httpie
-
--- htop
-1. brew install htop
 
 -- Git Setup Notes
 1. Need to fill out hidden fields
