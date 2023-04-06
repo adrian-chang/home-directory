@@ -1,6 +1,0 @@
---ignore-dir=node_modules
---ignore-dir=docs
---ignore-dir=vendor
---ignore-file=match:/[._].*\.swp$/
---ignore-dir=.devdata
---ignore-dir=.git
