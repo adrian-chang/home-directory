@@ -30,6 +30,10 @@
 4. brew install fish
 5. brew install nvim
 6. brew install asdf
+7. brew install fzf
+8. brew install ag
+9. brew install rg
+10. brew install fd
 
 -- Fish
 
