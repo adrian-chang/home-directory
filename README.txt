@@ -59,6 +59,8 @@
 2. cp ./nvim/*  ~/.config/nvim
 3. Install vim-plug
 4. :PlugInstall
+5. :CocInstall coc-go coc-python coc-css coc-html coc-json coc-tsserver coc-java
+
 
 -- Hosts
 1. /etc/hosts .....
