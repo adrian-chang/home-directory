@@ -34,8 +34,13 @@
 8. brew install ag
 9. brew install rg
 10. brew install fd
+11. brew tap homebrew/cask-fonts && brew install --cask font-droid-sans-mono-nerd-font
+12. Set font to droid
+
 
 -- Fish
+1. Install Oh My Fish
+2. Install Starship (seperately)
 
 
 -- asdf
