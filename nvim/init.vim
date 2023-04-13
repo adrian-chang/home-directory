@@ -41,8 +41,8 @@ set number
 " nerdtree
 autocmd VimEnter * NERDTree
 let NERDTreeShowHidden = 1
-map <c-o> :vertical resize +10
-map <c-c> :vertical resize -10
+map <c-v> :vertical resize +10<CR>
+map <c-c> :vertical resize -10<CR>
 
 
 " indentLine

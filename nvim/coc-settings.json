@@ -1,3 +1,4 @@
 {
-  "coc.preferences.jumpCommand": "split"
+  "coc.preferences.jumpCommand": "split",
+  "tsserver.maxTsServerMemory": 4098
 }
