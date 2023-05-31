@@ -35,10 +35,10 @@
 10. brew install fd
 11. brew tap homebrew/cask-fonts && brew install --cask font-droid-sans-mono-nerd-font
 12. Set font to droid
+13. brew install starship
 
 -- Fish
-1. Install Oh My Fish
-2. Install Starship (seperately)
+1. Install Oh My Fish (optional)
 
 -- asdf
 0. https://asdf-vm.com/guide/getting-started.html#community-supported-download-methods (Fix shim)
@@ -62,7 +62,3 @@
 3. Install vim-plug
 4. :PlugInstall
 5. :CocInstall coc-go coc-python coc-css coc-html coc-json coc-tsserver coc-java
-
-
--- Hosts
-1. /etc/hosts .....
