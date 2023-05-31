@@ -5,6 +5,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'jesseleite/vim-agriculture'
 Plug 'Yggdroot/indentLine'
 Plug 'ajmwagar/vim-deus'
 
@@ -55,8 +56,8 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 " FZF
 " https://dev.to/iggredible/how-to-search-faster-in-vim-with-fzf-vim-36ko
 " "https://github.com/sharkdp/fd
-set rtp+=/usr/local/opt/fzf
-let $FZF_DEFAULT_COMMAND = 'fd --type file --follow --hidden --exclude .git'
+set rtp+=/opt/homebrew/opt/fzf
+let $FZF_DEFAULT_COMMAND = 'rg --files --no-ignore-vcs --hidden'
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>r :Files<CR>
 nnoremap <Leader>f :Rg<CR>
@@ -67,7 +68,8 @@ nnoremap <Leader>H :Helptags<CR>
 nnoremap <Leader>hh :History<CR>
 nnoremap <Leader>h: :History:<CR>
 nnoremap <Leader>h/ :History/<CR>
-command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+" command! -bang -nargs=* Rg call fzf#vim#grep('rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..,..'}, <bang>0)
+nmap <Leader>ff <Plug>RgRawSearch
 
 " tabs
 nnoremap <C-h> :tabprevious<CR>                                                                            
