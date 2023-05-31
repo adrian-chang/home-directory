@@ -7,20 +7,19 @@
 1. Install pCloud
 2. Install Brave
 3. Install Divvy
-4. Install Notion
-5. Install Xcode
+3. Install Xcode
  - Use app store
  - Includes Dev tools (merge etc. /developer/utilites), should be included as part of XCode, command line tools also
    - https://developer.apple.com/downloads/index.action?name=for%20Xcode%20-#
-6. Install Homebrew
-7. Install iTerm 2.0
+4. Install Homebrew
+5. Install iTerm 2.0
   - https://shyr.io/blog/iterm2-beautiful-customizations
   - SourceCodePro + Powerline + Awesome Font
   - Solarized Dark High Contrast
   - Slight Transparency
-8. DataGrip (Optional)
+6. DataGrip (Optional)
 
--- Github
+-- Github (Optional)
 1. Add access keys to Github
 
 -- Brew
@@ -41,7 +40,6 @@
 -- Fish
 1. Install Oh My Fish
 2. Install Starship (seperately)
-
 
 -- asdf
 0. https://asdf-vm.com/guide/getting-started.html#community-supported-download-methods (Fix shim)
