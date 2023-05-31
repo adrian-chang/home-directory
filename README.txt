@@ -43,8 +43,8 @@
 -- asdf
 0. https://asdf-vm.com/guide/getting-started.html#community-supported-download-methods (Fix shim)
 1. asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-2. asdf install nodejs 18.15.0
-3. asdf global nodejs 18.150
+2. asdf install nodejs 18.16.0
+3. asdf global nodejs 18.16.0
 3. asdf plugin-add java https://github.com/halcyon/asdf-java.git
 4. asdf install java openjdk-20
 5. asdf global java openjdk-20
